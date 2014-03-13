@@ -1,4 +1,9 @@
-android_device_motorola_pasteur_wifi
-====================================
-
 Device configuration for the Motorola Xyboard/Xoom 2 (pasteur)
+
+Copyright (C) 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
