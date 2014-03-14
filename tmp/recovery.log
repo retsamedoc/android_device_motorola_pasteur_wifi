@@ -1,0 +1,848 @@
+Starting TWRP "2.2.2.1" on Mon Mar 10 07:02:52 2014
+Loading volume table...
+recovery filesystem table
+=========================
+  0 /tmp ramdisk (null) (null)
+  1 /sdcard datamedia /dev/null (null)
+  2 /data ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata (null)
+  3 /cache ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/cache (null)
+  4 /system ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/system (null)
+  5 /ss ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdataorig (null)
+  6 /datamedia ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdataorig (null)
+
+TW_SS_DEFAULT_VIRT_SYSTEM_SIZE == 700
+TW_SS_DEFAULT_VIRT_CACHE_SIZE == 300
+I:Internal path defined: '/datamedia/media'
+I:Just has internal storage.
+E:unknown volume for path [/]
+(3)TW_BACKUPS_FOLDER_VAR == /datamedia/media/TWRP/BACKUPS/TA606004XC
+Pixel format: 1280x800 @ 32bpp
+Pixel format: BGRA_8888
+framebuffer: fd 3 (1280 x 800)
+I:=> Installing busybox into /sbin
+ln: /sbin/mke2fs: File exists
+ln: /sbin/sh: File exists
+ln: /sbin/taskset: File exists
+ln: /sbin/tune2fs: File exists
+I:=> Linking mtab
+I:=> Getting locations
+W:Device does not support /proc/emmc
+W:Device does not support /proc/mtd
+I:=> Let's update filesystem types via verifyFst aka blkid, command: 'blkid'.
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923395072
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452566016
+I:Actual data used: 4470829056
+df: /dev/null: can't find mount point
+I:getUsedSizeViaDu(/datamedia/media/.android_secure) = du -sk /datamedia/media/.android_secure | awk '{ print $1 }'
+du: /datamedia/media/.android_secure: No such file or directory
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923395072
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452566016
+I:Actual data used: 4470829056
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923395072
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452566016
+I:Actual data used: 4470829056
++----------+-----------------------------+--------+----------+----------+---+---+
+| Mount    | Block Device                | fst    | Size(KB) | Used(KB) | M | B |
++----------+-----------------------------+--------+----------+----------+---+---+
+|          |                             |        |        0 |        0 | 0 | u |
+|   system |       /dev/block/mmcblk1p17 |   ext4 |   604352 |   539892 | 1 | f |
+|     data |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923844 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | i |
+|          |                             |        |        0 |        0 | 0 | i |
+|    cache |       /dev/block/mmcblk1p18 |   ext4 |   965560 |    16600 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|   sdcard |                   /dev/null | datamedia |        0 |        0 | 1 | n |
+|   andsec |            /datamedia/media |   vfat |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|       ss |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923844 | 1 | n |
+| datamedia |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923844 | 1 | n |
++----------+-----------------------------+--------+----------+----------+---+---+
+I:boot information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 2
+   memory type: 0
+
+I:system information:
+   mnt: 'system'
+   blk: '/dev/block/mmcblk1p17'
+   dev: '/dev/block/mmcblk1p17'
+   alt: ''
+   fst: 'ext4'
+   fnm: ''
+   format location: '/dev/block/mmcblk1p17'
+   mountable: 1
+   backup method: 3
+   memory type: 2
+
+I:data information:
+   mnt: 'data'
+   blk: '/dev/block/mmcblk1p20'
+   dev: '/dev/block/mmcblk1p20'
+   alt: ''
+   fst: 'ext4'
+   fnm: ''
+   format location: '/dev/block/mmcblk1p20'
+   mountable: 1
+   backup method: 3
+   memory type: 2
+
+I:cache information:
+   mnt: 'cache'
+   blk: '/dev/block/mmcblk1p18'
+   dev: '/dev/block/mmcblk1p18'
+   alt: ''
+   fst: 'ext4'
+   fnm: ''
+   format location: '/dev/block/mmcblk1p18'
+   mountable: 1
+   backup method: 3
+   memory type: 2
+
+I:recovery information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 2
+   memory type: 0
+
+I:sdcext information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 1
+   memory type: 0
+
+I:sdcint information:
+   mnt: 'sdcard'
+   blk: '/dev/null'
+   dev: '/dev/null'
+   alt: ''
+   fst: 'datamedia'
+   fnm: ''
+   format location: 'sdcard'
+   mountable: 1
+   backup method: 1
+   memory type: 1
+
+I:sd-ext information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 3
+   memory type: 0
+
+I:android_secure information:
+   mnt: '.android_secure'
+   blk: '/datamedia/media'
+   dev: '/datamedia/media/.android_secure'
+   alt: ''
+   fst: 'vfat'
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 3
+   memory type: 0
+
+I:special 1 information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 1
+   memory type: 0
+
+I:special 2 information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 1
+   memory type: 0
+
+I:special 3 information:
+   mnt: ''
+   blk: ''
+   dev: ''
+   alt: ''
+   fst: ''
+   fnm: ''
+   format location: ''
+   mountable: 0
+   backup method: 1
+   memory type: 0
+
+I:ss information:
+   mnt: 'ss'
+   blk: '/dev/block/mmcblk1p20'
+   dev: '/dev/block/mmcblk1p20'
+   alt: ''
+   fst: 'ext4'
+   fnm: ''
+   format location: '/dev/block/mmcblk1p20'
+   mountable: 1
+   backup method: 1
+   memory type: 2
+
+I:datamedia information:
+   mnt: 'datamedia'
+   blk: '/dev/block/mmcblk1p20'
+   dev: '/dev/block/mmcblk1p20'
+   alt: ''
+   fst: 'ext4'
+   fnm: ''
+   format location: '/dev/block/mmcblk1p20'
+   mountable: 1
+   backup method: 1
+   memory type: 2
+
+I:Loading package: TWRP (/script/ui.xml)
+I:Loading package: TWRP (/datamedia/media/TWRP/theme/ui.zip)
+I:Loading package: TWRP (/res/ui.xml)
+I:Loading resources...
+I:Loading variables...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page clear_vars
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page reboot
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page wipe
+I:Loading page backup
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/datamedia/media/TWRP/BACKUPS/TA606004XC'
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page settings
+I:Loading page timezone
+I:Loading page advanced
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageracction
+I:Loading page decrypt
+I:Loading page trydecrypt
+I:Loading page terminalfolder
+I:Loading page terminalcommand
+I:Loading page boot_slot_try_create
+I:Loading page boot_slot_create
+I:Loading page boot_slot_manage
+I:Loading page boot_slot_setname
+I:Loading page boot_options
+I:Switching packages (TWRP)
+Processing arguments (1)...
+D:doSafestrapAction(readslotnames(, 1));
+not found: tw_rom-slot1_name=ROM-Slot-1
+not found: tw_rom-slot2_name=ROM-Slot-2
+not found: tw_rom-slot3_name=ROM-Slot-3
+not found: tw_rom-slot4_name=ROM-Slot-4
+D:doSafestrapAction(readbootslot(tw_bootslot, 1));
+D:lSize=6
+D:result=6
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+Command: "/sbin/recovery"
+
+ro.secure=0
+ro.allow.mock.location=0
+ro.debuggable=1
+ro.factorytest=0
+ro.usb_mode=normal
+ro.serialno=TA606004XC
+ro.bootmode=unknown
+ro.baseband=unknown
+ro.carrier=wifi-only
+ro.bootloader=0x0A74
+ro.boot.modelno=MZ615-16
+ro.hardware=mapphone_cdma
+ro.revision=0
+ro.emmc=0
+ro.kernel.memsize=1024M
+init.svc.recovery=running
+service.adb.root=1
+init.svc.adbd=running
+
+I:Attempt to load settings from settings file...
+I:Mounting datamedia/media to /sdcard
+umount: can't umount /sdcard: Invalid argument
+I:Switching packages (TWRP)
+I:Set page: 'advanced'
+I:Set page: 'main'
+D:doSafestrapAction(readslotnames(, 1));
+not found: tw_rom-slot1_name=ROM-Slot-1
+not found: tw_rom-slot2_name=ROM-Slot-2
+not found: tw_rom-slot3_name=ROM-Slot-3
+not found: tw_rom-slot4_name=ROM-Slot-4
+D:doSafestrapAction(readbootslot(tw_bootslot, 1));
+D:lSize=6
+D:result=6
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'boot_options'
+D:doSafestrapAction(checkslotnames(, 1));
+checkslotnames: tw_rom-slot1_name=ROM-Slot-1
+checkslotnames: tw_rom-slot2_name=ROM-Slot-2
+checkslotnames: tw_rom-slot3_name=ROM-Slot-3
+checkslotnames: tw_rom-slot4_name=ROM-Slot-4
+I:Set page: 'main'
+D:doSafestrapAction(readslotnames(, 1));
+not found: tw_rom-slot1_name=ROM-Slot-1
+not found: tw_rom-slot2_name=ROM-Slot-2
+not found: tw_rom-slot3_name=ROM-Slot-3
+not found: tw_rom-slot4_name=ROM-Slot-4
+D:doSafestrapAction(readbootslot(tw_bootslot, 1));
+D:lSize=6
+D:result=6
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'backup'
+I:Set page: 'backup_run'
+D:doSafestrapAction(nandroid(backup, 0));
+D:doSafestrapAction(nandroid(backup, 1));
+I:Attempt to create folder '/datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/'
+
+[BACKUP STARTED]
+ * Backup Folder: /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/
+I:=> Let's update filesystem types via verifyFst aka blkid, command: 'blkid'.
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923415552
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452586496
+I:Actual data used: 4470829056
+df: /dev/null: can't find mount point
+I:getUsedSizeViaDu(/datamedia/media/.android_secure) = du -sk /datamedia/media/.android_secure | awk '{ print $1 }'
+du: /datamedia/media/.android_secure: No such file or directory
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923415552
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452586496
+I:Actual data used: 4470829056
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 6923415552
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 2452586496
+I:Actual data used: 4470829056
++----------+-----------------------------+--------+----------+----------+---+---+
+| Mount    | Block Device                | fst    | Size(KB) | Used(KB) | M | B |
++----------+-----------------------------+--------+----------+----------+---+---+
+|          |                             |        |        0 |        0 | 0 | u |
+|   system |       /dev/block/mmcblk1p17 |   ext4 |   604352 |   539892 | 1 | f |
+|     data |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923868 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | i |
+|          |                             |        |        0 |        0 | 0 | i |
+|    cache |       /dev/block/mmcblk1p18 |   ext4 |   965560 |    16628 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|   sdcard |                   /dev/null | datamedia |        0 |  6923868 | 1 | n |
+|   andsec |            /datamedia/media |   vfat |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|       ss |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923868 | 1 | n |
+| datamedia |       /dev/block/mmcblk1p20 |   ext4 | 12756104 |  6923868 | 1 | n |
++----------+-----------------------------+--------+----------+----------+---+---+
+I:Using internal storage.
+I:Internal label is: 'datamedia'
+I:Calculating backup details...
+I:Done calculating backup details.
+ * Total number of partition to back up: 2
+ * Total size of all data, in KB: 4905936
+ * Available space on the SD card, in KB: 5832236
+I:Estimated Total time: 2511  Estimated remaining time: 2511
+I:=> Size of /system is 539892 KB.
+
+[SYSTEM (527 MB)]
+...Backing up /system partition.
+I:=> Filename: system.ext4.win
+I:Backup command: 'cd /system && tar -cz -f /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/system.ext4.win ./*'
+ * Done.
+ * Verifying backup size.
+ * File size: 363640212 bytes.
+ * Generating md5...
+....MD5 Created.
+[SYSTEM DONE (168 SECONDS)]
+
+I:Partition Backup time: 168
+I:Estimated Total time: 2511  Estimated remaining time: 2235
+I:=> Size of /data is 4366044 KB.
+
+[DATA (4263 MB)]
+...Backing up /data partition.
+Breaking backup file into multiple archives...
+Generating file lists
+I:getUsedSizeViaDu(/data/lost+found) = du -sk /data/lost+found | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/dontpanic) = du -sk /data/dontpanic | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/misc) = du -sk /data/misc | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/local) = du -sk /data/local | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data) = du -sk /data/data | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/blur.res) = du -sk /data/data/blur.res | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.pixlr.express) = du -sk /data/data/com.pixlr.express | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.prey) = du -sk /data/data/com.prey | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.adminfeed) = du -sk /data/data/com.motorola.blur.adminfeed | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.cisco.anyconnect.preload) = du -sk /data/data/com.cisco.anyconnect.preload | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.applications) = du -sk /data/data/com.android.providers.applications | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.AudioEffectSettings) = du -sk /data/data/com.motorola.android.AudioEffectSettings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.backupconfirm) = du -sk /data/data/com.android.backupconfirm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.bluetooth) = du -sk /data/data/com.android.bluetooth | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.updater) = du -sk /data/data/com.motorola.blur.updater | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.books) = du -sk /data/data/com.google.android.apps.books | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.browser) = du -sk /data/data/com.android.browser | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.motocit) = du -sk /data/data/com.motorola.motocit | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.calculator2) = du -sk /data/data/com.android.calculator2 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.calendar) = du -sk /data/data/com.android.providers.calendar | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.camera) = du -sk /data/data/com.android.camera | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.certinstaller) = du -sk /data/data/com.android.certinstaller | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.certificateprovider) = du -sk /data/data/com.motorola.certificateprovider | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.syncadapters.bookmarks) = du -sk /data/data/com.google.android.syncadapters.bookmarks | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.sdm.plugins.connmo) = du -sk /data/data/com.motorola.android.sdm.plugins.connmo | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.contacts) = du -sk /data/data/com.android.contacts | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.contacts) = du -sk /data/data/com.android.providers.contacts | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.dm.service) = du -sk /data/data/com.motorola.android.dm.service | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.datacollection) = du -sk /data/data/com.motorola.datacollection | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.provider.datacollector) = du -sk /data/data/com.motorola.blur.provider.datacollector | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.datacollector.service) = du -sk /data/data/com.motorola.blur.datacollector.service | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.defcontainer) = du -sk /data/data/com.android.defcontainer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.demomode) = du -sk /data/data/com.motorola.demomode | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.dijit.urc) = du -sk /data/data/com.dijit.urc | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.dockservice) = du -sk /data/data/com.motorola.dockservice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.downloads) = du -sk /data/data/com.android.providers.downloads | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.downloads.ui) = du -sk /data/data/com.android.providers.downloads.ui | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.drm) = du -sk /data/data/com.android.providers.drm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.encryption.settings) = du -sk /data/data/com.motorola.android.encryption.settings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.evernote) = du -sk /data/data/com.evernote | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.extdispservice) = du -sk /data/data/com.motorola.android.extdispservice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.facelock) = du -sk /data/data/com.android.facelock | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.filemanager) = du -sk /data/data/com.motorola.filemanager | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.flashremoval) = du -sk /data/data/com.motorola.flashremoval | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.floatingnotes) = du -sk /data/data/com.motorola.floatingnotes | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.maps) = du -sk /data/data/com.google.android.apps.maps | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.gm) = du -sk /data/data/com.google.android.gm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.citrixonline.android.gotomeeting) = du -sk /data/data/com.citrixonline.android.gotomeeting | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.backup) = du -sk /data/data/com.google.android.backup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.syncadapters.calendar) = du -sk /data/data/com.google.android.syncadapters.calendar | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.syncadapters.contacts) = du -sk /data/data/com.google.android.syncadapters.contacts | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.feedback) = du -sk /data/data/com.google.android.feedback | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.gsf.login) = du -sk /data/data/com.google.android.gsf.login | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.partnersetup) = du -sk /data/data/com.google.android.partnersetup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.googlequicksearchbox) = du -sk /data/data/com.google.android.googlequicksearchbox | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.gsf) = du -sk /data/data/com.google.android.gsf | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.tts) = du -sk /data/data/com.google.android.tts | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.htmlviewer) = du -sk /data/data/com.android.htmlviewer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.helpcenter) = du -sk /data/data/com.motorola.blur.helpcenter | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.wallpaper.holospiral) = du -sk /data/data/com.android.wallpaper.holospiral | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.homescreen.config) = du -sk /data/data/com.motorola.homescreen.config | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.launcher) = du -sk /data/data/com.android.launcher | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.hostdeviceagent) = du -sk /data/data/com.motorola.android.hostdeviceagent | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.irportservice) = du -sk /data/data/com.motorola.irportservice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/net.juniper.junos.pulse.placeholder) = du -sk /data/data/net.juniper.junos.pulse.placeholder | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.keychain) = du -sk /data/data/com.android.keychain | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.lmi.motorola.rescuesecurity) = du -sk /data/data/com.lmi.motorola.rescuesecurity | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.inputmethod.latin) = du -sk /data/data/com.motorola.inputmethod.latin | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.inputmethod.latinime) = du -sk /data/data/com.motorola.inputmethod.latinime | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.inputmethod.latin.dictionarypack) = du -sk /data/data/com.google.android.inputmethod.latin.dictionarypack | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.wallpaper.livepicker) = du -sk /data/data/com.android.wallpaper.livepicker | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.locationproxyservice) = du -sk /data/data/com.motorola.android.locationproxyservice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.MCDownload) = du -sk /data/data/com.motorola.MCDownload | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.media) = du -sk /data/data/com.android.providers.media | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.uploader) = du -sk /data/data/com.google.android.apps.uploader | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.bach.modemstats) = du -sk /data/data/com.motorola.bach.modemstats | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.MotGallery2) = du -sk /data/data/com.motorola.MotGallery2 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.vpn) = du -sk /data/data/com.motorola.vpn | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.widget.weatherclock) = du -sk /data/data/com.motorola.widget.weatherclock | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.transdroid) = du -sk /data/data/org.transdroid | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.motoconnect) = du -sk /data/data/com.motorola.motoconnect | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.deskclock) = du -sk /data/data/com.android.deskclock | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.dockhelperservice) = du -sk /data/data/com.motorola.dockhelperservice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.motoemail) = du -sk /data/data/com.motorola.motoemail | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.emailconfig) = du -sk /data/data/com.motorola.emailconfig | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.motosignature.app) = du -sk /data/data/com.motorola.motosignature.app | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.inputmethod.motosmarthandwriting) = du -sk /data/data/com.motorola.inputmethod.motosmarthandwriting | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.provider.motorola.app) = du -sk /data/data/com.motorola.blur.provider.motorola.app | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.providers.settings) = du -sk /data/data/com.motorola.android.providers.settings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music) = du -sk /data/data/com.google.android.music | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/lib) = du -sk /data/data/com.google.android.music/lib | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/cache) = du -sk /data/data/com.google.android.music/cache | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/databases) = du -sk /data/data/com.google.android.music/databases | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/shared_prefs) = du -sk /data/data/com.google.android.music/shared_prefs | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/app_sslcache) = du -sk /data/data/com.google.android.music/app_sslcache | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/files) = du -sk /data/data/com.google.android.music/files | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/files/artwork) = du -sk /data/data/com.google.android.music/files/artwork | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/files/artwork2) = du -sk /data/data/com.google.android.music/files/artwork2 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.music/files/music) = du -sk /data/data/com.google.android.music/files/music | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.musicfx) = du -sk /data/data/com.android.musicfx | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.airbnb.android) = du -sk /data/data/com.airbnb.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.location) = du -sk /data/data/com.google.android.location | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.onetimeinitializer) = du -sk /data/data/com.google.android.onetimeinitializer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.service.payg) = du -sk /data/data/com.motorola.service.payg | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.packageinstaller) = du -sk /data/data/com.android.packageinstaller | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.phone) = du -sk /data/data/com.android.phone | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.vending) = du -sk /data/data/com.android.vending | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.PhotoEditor) = du -sk /data/data/com.motorola.android.PhotoEditor | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.koushikdutta.rommanager) = du -sk /data/data/com.koushikdutta.rommanager | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.plus) = du -sk /data/data/com.google.android.apps.plus | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.polycom.cmad.mobile.android) = du -sk /data/data/com.polycom.cmad.mobile.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.preferredstorage) = du -sk /data/data/com.motorola.preferredstorage | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.contacts.preloadcontacts) = du -sk /data/data/com.motorola.contacts.preloadcontacts | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.qo.android.moto) = du -sk /data/data/com.qo.android.moto | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.uei.quicksetsdk) = du -sk /data/data/com.uei.quicksetsdk | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.RemoteMediaViewer) = du -sk /data/data/com.motorola.RemoteMediaViewer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.settings) = du -sk /data/data/com.android.settings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.settings) = du -sk /data/data/com.android.providers.settings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.setup) = du -sk /data/data/com.motorola.blur.setup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.setupprovider) = du -sk /data/data/com.motorola.blur.setupprovider | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.setupsettings) = du -sk /data/data/com.motorola.blur.setupsettings | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.setupwizard) = du -sk /data/data/com.google.android.setupwizard | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.sharedstoragebackup) = du -sk /data/data/com.android.sharedstoragebackup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.evernote.skitch) = du -sk /data/data/com.evernote.skitch | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.soundrecorder) = du -sk /data/data/com.android.soundrecorder | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.street) = du -sk /data/data/com.google.android.street | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.provider.suggestions) = du -sk /data/data/com.motorola.blur.provider.suggestions | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.suggestions.rulechecker) = du -sk /data/data/com.motorola.blur.suggestions.rulechecker | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.suggestions.scheduler) = du -sk /data/data/com.motorola.blur.suggestions.scheduler | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.koushikdutta.rommanager.license) = du -sk /data/data/com.koushikdutta.rommanager.license | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.s0up.goomanager) = du -sk /data/data/com.s0up.goomanager | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.hashcode.safestrap) = du -sk /data/data/com.hashcode.safestrap | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.systemui) = du -sk /data/data/com.android.systemui | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.talk) = du -sk /data/data/com.google.android.talk | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.tasks) = du -sk /data/data/com.motorola.tasks | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.telephony) = du -sk /data/data/com.android.providers.telephony | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.Upgrader) = du -sk /data/data/com.motorola.Upgrader | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.providers.userdictionary) = du -sk /data/data/com.android.providers.userdictionary | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.videos) = du -sk /data/data/com.google.android.videos | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.musicvis) = du -sk /data/data/com.android.musicvis | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.voicesearch) = du -sk /data/data/com.google.android.voicesearch | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.safenet.vpnclient) = du -sk /data/data/com.safenet.vpnclient | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.vpndialogs) = du -sk /data/data/com.android.vpndialogs | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.smspush) = du -sk /data/data/com.android.smspush | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.widgetapp.worldclock) = du -sk /data/data/com.motorola.widgetapp.worldclock | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.youtube) = du -sk /data/data/com.google.android.youtube | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.zecter.droid.services) = du -sk /data/data/com.zecter.droid.services | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.blur.service.blur) = du -sk /data/data/com.motorola.blur.service.blur | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.settings.aplogd) = du -sk /data/data/com.motorola.android.settings.aplogd | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.motorola.android.omadrm) = du -sk /data/data/com.motorola.android.omadrm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.da_DK) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.da_DK | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.de_DE) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.de_DE | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.el_GR) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.el_GR | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.en_CA) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.en_CA | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.en_GB) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.en_GB | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.es_ES) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.es_ES | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.es_MX) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.es_MX | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.fi_FI) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.fi_FI | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.fr_CA) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.fr_CA | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.fr_FR) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.fr_FR | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.hu_HU) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.hu_HU | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.it_IT) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.it_IT | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.ja_JP) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.ja_JP | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.ko_KR) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.ko_KR | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.nl_NL) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.nl_NL | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.no_NO) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.no_NO | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.pl_PL) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.pl_PL | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.pt_BR) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.pt_BR | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.pt_PT) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.pt_PT | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.ru_RU) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.ru_RU | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.sv_SE) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.sv_SE | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.tr_TR) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.tr_TR | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.zh_CN) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.zh_CN | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot.data.zh_TW) = du -sk /data/data/com.visionobjects.stylusmobile_mot.data.zh_TW | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.stylusmobile_mot) = du -sk /data/data/com.visionobjects.stylusmobile_mot | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.marvin.talkback) = du -sk /data/data/com.google.android.marvin.talkback | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.citrix.Receiver) = du -sk /data/data/com.citrix.Receiver | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.fuzebox.fuze.android) = du -sk /data/data/com.fuzebox.fuze.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.softwareimaging.motoprint.mobile) = du -sk /data/data/com.softwareimaging.motoprint.mobile | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.gms) = du -sk /data/data/com.google.android.gms | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.connectbot) = du -sk /data/data/org.connectbot | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/android.androidVNC) = du -sk /data/data/android.androidVNC | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.mint) = du -sk /data/data/com.mint | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.pocketworkstation.pckeyboard) = du -sk /data/data/org.pocketworkstation.pckeyboard | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/net.flixster.android) = du -sk /data/data/net.flixster.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.springpad) = du -sk /data/data/com.springpad | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.android.chrome) = du -sk /data/data/com.android.chrome | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.zxing.client.android) = du -sk /data/data/com.google.zxing.client.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.anydo) = du -sk /data/data/com.anydo | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/jackpal.androidterm) = du -sk /data/data/jackpal.androidterm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/stericson.busybox) = du -sk /data/data/stericson.busybox | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/it.android.demi.elettronica) = du -sk /data/data/it.android.demi.elettronica | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.dropbox.android) = du -sk /data/data/com.dropbox.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.code42.crashplan.android) = du -sk /data/data/com.code42.crashplan.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.facebook.katana) = du -sk /data/data/com.facebook.katana | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.ancestry.android.apps.ancestry) = du -sk /data/data/com.ancestry.android.apps.ancestry | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.sunlightlabs.android.congress) = du -sk /data/data/com.sunlightlabs.android.congress | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/it.android.demi.elettronica.db.pic) = du -sk /data/data/it.android.demi.elettronica.db.pic | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/it.demi.elettronica.db.avr) = du -sk /data/data/it.demi.elettronica.db.avr | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/tablifiedapps.tablifiedmarket) = du -sk /data/data/tablifiedapps.tablifiedmarket | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.calendar) = du -sk /data/data/com.google.android.calendar | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.earth) = du -sk /data/data/com.google.earth | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.docs) = du -sk /data/data/com.google.android.apps.docs | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.nianticproject.ingress) = du -sk /data/data/com.nianticproject.ingress | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.linode.android) = du -sk /data/data/com.linode.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.linkedin.android) = du -sk /data/data/com.linkedin.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm.plugin.sci) = du -sk /data/data/org.scummvm.scummvm.plugin.sci | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.jotabout.screeninfo) = du -sk /data/data/com.jotabout.screeninfo | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.tvkdevelopment.nobloatfree) = du -sk /data/data/com.tvkdevelopment.nobloatfree | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.totsp.crossword.shortyz) = du -sk /data/data/com.totsp.crossword.shortyz | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.greenecomputing.linpack) = du -sk /data/data/com.greenecomputing.linpack | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.sdincrease.it) = du -sk /data/data/com.sdincrease.it | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.stardroid) = du -sk /data/data/com.google.android.stardroid | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.skype.raider) = du -sk /data/data/com.skype.raider | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.valvesoftware.android.steam.community) = du -sk /data/data/com.valvesoftware.android.steam.community | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.anod.calendar) = du -sk /data/data/com.anod.calendar | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.zwanoo.android.speedtest) = du -sk /data/data/org.zwanoo.android.speedtest | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/factory.widgets.TransparentClock) = du -sk /data/data/factory.widgets.TransparentClock | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/bander.notepad) = du -sk /data/data/bander.notepad | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.nuance.balerion) = du -sk /data/data/com.nuance.balerion | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.twitter.android) = du -sk /data/data/com.twitter.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.microsoft.smartglass) = du -sk /data/data/com.microsoft.smartglass | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.farproc.wifi.analyzer) = du -sk /data/data/com.farproc.wifi.analyzer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.squareup) = du -sk /data/data/com.squareup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm) = du -sk /data/data/org.scummvm.scummvm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.mhuang.overclocking) = du -sk /data/data/com.mhuang.overclocking | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/mot.app.admin) = du -sk /data/data/mot.app.admin | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.ifs.banking.fiid3504) = du -sk /data/data/com.ifs.banking.fiid3504 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm.plugin.scumm) = du -sk /data/data/org.scummvm.scummvm.plugin.scumm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm.plugin.agi) = du -sk /data/data/org.scummvm.scummvm.plugin.agi | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.chase.sig.android) = du -sk /data/data/com.chase.sig.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.projectvoodoo.otarootkeeper) = du -sk /data/data/org.projectvoodoo.otarootkeeper | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.amazon.windowshop) = du -sk /data/data/com.amazon.windowshop | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.noshufou.android.su) = du -sk /data/data/com.noshufou.android.su | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.fdroid.fdroid) = du -sk /data/data/org.fdroid.fdroid | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/net.dinglisch.android.tasker) = du -sk /data/data/net.dinglisch.android.tasker | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.adblockplus.android) = du -sk /data/data/org.adblockplus.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.adaway) = du -sk /data/data/org.adaway | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.jeyries.quake2) = du -sk /data/data/com.jeyries.quake2 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/de.onyxbits.sensorreadout) = du -sk /data/data/de.onyxbits.sensorreadout | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.mareksebera.dilbert) = du -sk /data/data/com.mareksebera.dilbert | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/net.momodalo.app.vimtouch) = du -sk /data/data/net.momodalo.app.vimtouch | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/au.com.darkside.XServer) = du -sk /data/data/au.com.darkside.XServer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.xbmc.xbmc) = du -sk /data/data/org.xbmc.xbmc | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.tablet.bofa) = du -sk /data/data/com.tablet.bofa | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.zillow.android.zillowmap) = du -sk /data/data/com.zillow.android.zillowmap | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.newegg.tablet) = du -sk /data/data/com.newegg.tablet | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/uk.amimetic.wikibrowser) = du -sk /data/data/uk.amimetic.wikibrowser | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/nz.co.tentacle.android.newagedrumsBeta) = du -sk /data/data/nz.co.tentacle.android.newagedrumsBeta | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.zagat) = du -sk /data/data/com.google.zagat | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.googlevoice) = du -sk /data/data/com.google.android.apps.googlevoice | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.schemer) = du -sk /data/data/com.google.android.apps.schemer | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.adsk.sketchbookhdexpress) = du -sk /data/data/com.adsk.sketchbookhdexpress | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.greatclips.android) = du -sk /data/data/com.greatclips.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm.plugin.sword1) = du -sk /data/data/org.scummvm.scummvm.plugin.sword1 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.scummvm.scummvm.plugin.sword2) = du -sk /data/data/org.scummvm.scummvm.plugin.sword2 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/de.schaeuffelhut.android.openvpn) = du -sk /data/data/de.schaeuffelhut.android.openvpn | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.cradle.iitc_mobile) = du -sk /data/data/com.cradle.iitc_mobile | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/org.zakky.memopad) = du -sk /data/data/org.zakky.memopad | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.write.Quill) = du -sk /data/data/com.write.Quill | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.painless.pc) = du -sk /data/data/com.painless.pc | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.brewzor.pro.beta) = du -sk /data/data/com.brewzor.pro.beta | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.ears) = du -sk /data/data/com.google.android.ears | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.cloudprint) = du -sk /data/data/com.google.android.apps.cloudprint | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.lowes.android) = du -sk /data/data/com.lowes.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.dozuki.ifixit) = du -sk /data/data/com.dozuki.ifixit | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.strategiesinsoftware.erg) = du -sk /data/data/com.strategiesinsoftware.erg | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.duolingo) = du -sk /data/data/com.duolingo | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.thehomedepot) = du -sk /data/data/com.thehomedepot | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.costco.app.android) = du -sk /data/data/com.costco.app.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.frysfood.mobile) = du -sk /data/data/com.frysfood.mobile | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.hudren.neocal.lite) = du -sk /data/data/com.hudren.neocal.lite | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.vitocassisi.luxlite) = du -sk /data/data/com.vitocassisi.luxlite | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.mxtech.videoplayer.ad) = du -sk /data/data/com.mxtech.videoplayer.ad | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.TwinBlade.PicturePassword) = du -sk /data/data/com.TwinBlade.PicturePassword | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.target.ui) = du -sk /data/data/com.target.ui | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.bloketech.lockwatch) = du -sk /data/data/com.bloketech.lockwatch | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.artelplus.howtotie) = du -sk /data/data/com.artelplus.howtotie | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.aldiko.android) = du -sk /data/data/com.aldiko.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.visionobjects.calculator) = du -sk /data/data/com.visionobjects.calculator | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.quickoffice.android) = du -sk /data/data/com.quickoffice.android | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.humblebundle.library) = du -sk /data/data/com.humblebundle.library | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.play.games) = du -sk /data/data/com.google.android.play.games | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.nema.batterycalibration) = du -sk /data/data/com.nema.batterycalibration | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.touchtype.swiftkey) = du -sk /data/data/com.touchtype.swiftkey | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.google.android.apps.adm) = du -sk /data/data/com.google.android.apps.adm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/data/com.avabodh.lekh) = du -sk /data/data/com.avabodh.lekh | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/app-private) = du -sk /data/app-private | awk '{ print $1 }'
+4
+I:getUsedSizeViaDu(/data/app) = du -sk /data/app | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/property) = du -sk /data/property | awk '{ print $1 }'
+48
+I:getUsedSizeViaDu(/data/dalvik-cache) = du -sk /data/dalvik-cache | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/resource-cache) = du -sk /data/resource-cache | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/drm) = du -sk /data/drm | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/tmp) = du -sk /data/tmp | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/download) = du -sk /data/download | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/system) = du -sk /data/system | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/gki) = du -sk /data/gki | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/logger) = du -sk /data/logger | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/panicreports) = du -sk /data/panicreports | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/tombstones) = du -sk /data/tombstones | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/location) = du -sk /data/location | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/anr) = du -sk /data/anr | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/tpapi) = du -sk /data/tpapi | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/emt) = du -sk /data/emt | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/home) = du -sk /data/home | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/battd) = du -sk /data/battd | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/kernelpanics) = du -sk /data/kernelpanics | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/user) = du -sk /data/user | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/backup) = du -sk /data/backup | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/preinstall_md5) = du -sk /data/preinstall_md5 | awk '{ print $1 }'
+I:getUsedSizeViaDu(/data/usr) = du -sk /data/usr | awk '{ print $1 }'
+I:Done, generated 3 files.
+I:=> Filename: data.ext4.win000
+I:Backup command: 'tar -cz -f /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/data.ext4.win000 -T /tmp/list/filelist000'
+Backup archive 1 of 3...
+tar: removing leading '/' from member names
+tar: /data/misc/wifi/sockets/wpa_ctrl_286-1: socket ignored
+tar: /data/misc/wifi/sockets/wpa_ctrl_286-2: socket ignored
+ * Generating md5...
+....MD5 Created.
+I:=> Filename: data.ext4.win001
+I:Backup command: 'tar -cz -f /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/data.ext4.win001 -T /tmp/list/filelist001'
+Backup archive 2 of 3...
+tar: removing leading '/' from member names
+ * Generating md5...
+....MD5 Created.
+I:=> Filename: data.ext4.win002
+I:Backup command: 'tar -cz -f /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/data.ext4.win002 -T /tmp/list/filelist002'
+Backup archive 3 of 3...
+tar: removing leading '/' from member names
+tar: /data/location/GpsIpcDrvSocket: socket ignored
+tar: /data/location/GpsIpcSpDrvSocket: socket ignored
+tar: /data/location/GpsIpcSpEeSocket: socket ignored
+tar: /data/gki/gki_pseudo_socket: socket ignored
+tar: /data/tmp/tunctl: socket ignored
+tar: /data/tmp/sockpath: socket ignored
+tar: /data/tmp/remote_folder_d: socket ignored
+ * Generating md5...
+....MD5 Created.
+ * Total size: 3504666828 bytes.
+[DATA DONE (2109 SECONDS)]
+
+I:Partition Backup time: 2109
+I:=> Let's update filesystem types via verifyFst aka blkid, command: 'blkid'.
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 10791772160
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 6320943104
+I:Actual data used: 4470829056
+df: /dev/null: can't find mount point
+I:getUsedSizeViaDu(/datamedia/media/.android_secure) = du -sk /datamedia/media/.android_secure | awk '{ print $1 }'
+du: /datamedia/media/.android_secure: No such file or directory
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 10791772160
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 6320943104
+I:Actual data used: 4470829056
+I:Device has /data/media
+I:getUsedSizeViaDu(datamedia) = du -sk datamedia | awk '{ print $1 }'
+I:Total used space on /data is: 10791772160
+I:getUsedSizeViaDu(datamedia/media) = du -sk datamedia/media | awk '{ print $1 }'
+I:Total in /data/media is: 6320943104
+I:Actual data used: 4470829056
++----------+-----------------------------+--------+----------+----------+---+---+
+| Mount    | Block Device                | fst    | Size(KB) | Used(KB) | M | B |
++----------+-----------------------------+--------+----------+----------+---+---+
+|          |                             |        |        0 |        0 | 0 | u |
+|   system |       /dev/block/mmcblk1p17 |   ext4 |   604352 |   539892 | 1 | f |
+|     data |       /dev/block/mmcblk1p20 |   ext4 | 12756104 | 10701560 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | i |
+|          |                             |        |        0 |        0 | 0 | i |
+|    cache |       /dev/block/mmcblk1p18 |   ext4 |   965560 |    16628 | 1 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|   sdcard |                   /dev/null | datamedia |        0 | 10701560 | 1 | n |
+|   andsec |            /datamedia/media |   vfat |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | f |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|          |                             |        |        0 |        0 | 0 | n |
+|       ss |       /dev/block/mmcblk1p20 |   ext4 | 12756104 | 10701560 | 1 | n |
+| datamedia |       /dev/block/mmcblk1p20 |   ext4 | 12756104 | 10701560 | 1 | n |
++----------+-----------------------------+--------+----------+----------+---+---+
+I:img_bps = 0  total_img_bytes = 0  img_byte_time = 1
+Average backup rate for file systems: 2 MB/sec
+Average backup rate for imaged drives: 0 MB/sec
+I:getUsedSizeViaDu(/datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/) = du -sk /datamedia/media/TWRP/BACKUPS/TA606004XC/stock-stock-2014-03-10--01-03-39/ | awk '{ print $1 }'
+[3689 MB TOTAL BACKED UP]
+[BACKUP COMPLETED IN 2288 SECONDS]
+
+I:Set page: 'action_complete'
+I:Set page: 'action_complete'
+I:Set page: 'clear_vars'
+I:Set page: 'backup'
+I:Set page: 'main'
+D:doSafestrapAction(readslotnames(, 1));
+not found: tw_rom-slot1_name=ROM-Slot-1
+not found: tw_rom-slot2_name=ROM-Slot-2
+not found: tw_rom-slot3_name=ROM-Slot-3
+not found: tw_rom-slot4_name=ROM-Slot-4
+D:doSafestrapAction(readbootslot(tw_bootslot, 1));
+D:lSize=6
+D:result=6
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'reboot'
+I:Set page: 'rebootcheck'

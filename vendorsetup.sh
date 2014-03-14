@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_pasteur-userdebug
+add_lunch_combo cm_pasteur_wifi-userdebug

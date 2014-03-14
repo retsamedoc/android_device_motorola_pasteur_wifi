@@ -1,0 +1,11 @@
+# system/lib/hw
+lib/hw/gps.pasteur.so
+lib/hw/sensors.pasteur.so
+lib/hw/lights.pasteur.so
+lib/libsensorhub_jni.so
+
+# system/lib
+#lib/libnbgm.so
+
+# system/etc/omapcam/module2
+etc/omapcam/module2/cid1044_mt9m114_sensor_config_dcc.bin
