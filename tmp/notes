@@ -1,0 +1,28 @@
+Motorola Xyboard MZ615 10.1" Wifi (pasteur_wifi)
+
+OMAP4430 (Cortex A9 ARMv7 + NEON)
+PowerVR SGX 540 Graphics
+
+Use Droid RAZR (Spyder) as master
+Bluetooth is similar to Droid 4
+
+1.2GHz dual-core Texas Instruments OMAP processor
+1GB DDR2 SDRAM
+16GB flash storage
+10.1" IPS TFT active matrix display (1280 x 800)
+5MP rear-facing camera
+1.3MP front-facing camera
+3.7V, 7,000 mAh Li-Ion battery
+IR Transmitter
+
+Samsung K3PE7E700M-XGC1 4Gb LPDDR2 RAM
+Maxim MAXQ610 16-Bit Microcontroller with Infrared Module
+Qualcomm RTR8600 multi-band/mode RF transceiver for LTE bands
+TriQuint TQM7M5013  Quad-Band GSM / GPRS / EDGE-Linear Power Amplifier Module
+Avago A2FI140 048345
+Unknown Motorola IC? (MOT 14621 011-R 1F746-2)
+Unknown IC (77701-2 72827.1 1137 MX)
+
+./build/tools/device/mkvendor.sh motorola pasteur_wifi device/motorola/pasteur/temp/boot.img
+lunch cm_pasteur_wifi-eng
+. build/tools/device/makerecoveries.sh cm_pasteur_wifi-eng

@@ -1,0 +1,8 @@
+wl12xx_sdio 4062 0 - Live 0xbf0f9000
+btwilink 3478 0 - Live 0xbf0f5000
+cifs 254456 0 - Live 0xbf0ac000
+wl12xx 135043 1 wl12xx_sdio, Live 0xbf081000
+mac80211 220524 1 wl12xx, Live 0xbf03d000
+cfg80211 163773 2 wl12xx,mac80211, Live 0xbf009000
+compat 2546 0 - Live 0xbf005000
+evfwd 4666 0 - Live 0xbf000000

@@ -1,0 +1,893 @@
+nitializing cgroup subsys cpu
+<5>[    0.000000,0] Linux version 3.0.8-g09a8c55 (hudsoncm@il93lnxdroid53) (gcc version 4.4.3 (GCC) ) #1 SMP PREEMPT Tue Jul 3 13:50:54 CDT 2012
+<4>[    0.000000,0] CPU: ARMv7 Processor [411fc093] revision 3 (ARMv7), cr=10c5387f
+<4>[    0.000000,0] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<4>[    0.000000,0] Machine: mapphone_
+<4>[    0.000000,0] parse_tag_powerup_reason: powerup reason=0x00000080
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000402
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000403
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000404
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000405
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000406
+<6>[    0.000000,0] parse_tag_mbm_version: mbm_version=0x00000a74
+<6>[    0.000000,0] parse_tag_mbm_loader_version: mbm_loader_version=0x00000a74
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000409
+<6>[    0.000000,0] flat_dev_tree_address=0x88490000, flat_dev_tree_size == 0x0000234C
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf100040b
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf100040c
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf100040d
+<6>[    0.000000,0] parse_tag_battery_status_at_boot: battery_status_at_boot=0x00000001
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf100040f
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000410
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000411
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000412
+<4>[    0.000000,0] Ignoring unrecognised tag 0xf1000413
+<6>[    0.000000,0] Reserving 8388608 bytes SDRAM for VRAM
+<4>[    0.000000,0] Memory policy: ECC disabled, Data cache writealloc
+<6>[    0.000000,0] ***********************
+<6>[    0.000000,0] OMAP4430 ES2.3 type(HS)
+<6>[    0.000000,0] id-code  (6b95c02f)
+<6>[    0.000000,0] Die-id   (6B240006-00000001-015475D0-1601E018)
+<6>[    0.000000,0] Prod-id  (C00EB95C-000600CC)
+<6>[    0.000000,0] ***********************
+<3>[    0.000000,0] Uninitialized omap_chip, please fix!
+<6>[    0.000000,0] SRAM: Mapped pa 0x4030d000 to va 0xfe40d000 size: 0x1000
+<6>[    0.000000,0] SMC: Allocated workspace of 0x300000 Bytes at (0xbfd00000)
+<7>[    0.000000,0] On node 0 totalpages: 220926
+<7>[    0.000000,0] free_area_init_node: node 0, pgdat c08f3a60, node_mem_map c0a81000
+<7>[    0.000000,0]   Normal zone: 1024 pages used for memmap
+<7>[    0.000000,0]   Normal zone: 0 pages reserved
+<7>[    0.000000,0]   Normal zone: 128000 pages, LIFO batch:31
+<7>[    0.000000,0]   HighMem zone: 1024 pages used for memmap
+<7>[    0.000000,0]   HighMem zone: 90878 pages, LIFO batch:31
+<6>[    0.000000,0] Unflattening device tree: 0xc12850dc
+<4>[    0.000000,0] End of tree marker overwritten: efbeadde
+<6>[    0.000000,0] PERCPU: Embedded 7 pages/cpu @c128c000 s6848 r8192 d13632 u32768
+<7>[    0.000000,0] pcpu-alloc: s6848 r8192 d13632 u32768 alloc=8*4096
+<7>[    0.000000,0] pcpu-alloc: [0] 0 [0] 1 
+<4>[    0.000000,0] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 218878
+<5>[    0.000000,0] Kernel command line: omap_wdt.timer_margin=60 oops=panic trace_buf_size=262144 console=/dev/null rw mem=1024M@0x80000000 vram=8004K,0x81800000 omapfb.vram=0:8000K@0x81800000,1:4K@0x81FD0000 init=/init ip=off mmcparts=mmcblk1:p5(pds),p11(boot),p12(recovery),p13(cdrom),p14(misc),p15(cid),p16(kpanic),p17(system),p18(cache),p19(preinstall),p20(userdata) mot_sst=1 androidboot.serialno=TA606004XC androidboot.bootloader=0x0A74 androidboot.msn=N076SQ22MC androidboot.modelno=MZ615-16 androidboot.carrier=wifi-only
+<6>[    0.000000,0] PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.000000,0] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000,0] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000,0] Memory: 24MB 480MB 358MB = 862MB total
+<5>[    0.000000,0] Memory: 863972k/863972k available, 184604k reserved, 367608K highmem
+<5>[    0.000000,0] Virtual kernel memory layout:
+<5>[    0.000000,0]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000,0]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000,0]     DMA     : 0xffa00000 - 0xffe00000   (   4 MB)
+<5>[    0.000000,0]     vmalloc : 0xe0800000 - 0xf8000000   ( 376 MB)
+<5>[    0.000000,0]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+<5>[    0.000000,0]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000,0]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000,0]       .init : 0xc0008000 - 0xc004d000   ( 276 kB)
+<5>[    0.000000,0]       .text : 0xc004d000 - 0xc0851000   (8208 kB)
+<5>[    0.000000,0]       .data : 0xc0852000 - 0xc08f4560   ( 650 kB)
+<5>[    0.000000,0]        .bss : 0xc08f4584 - 0xc0a804c0   (1584 kB)
+<6>[    0.000000,0] Preemptible hierarchical RCU implementation.
+<6>[    0.000000,0] NR_IRQS:376
+<4>[    0.000000,0] omap_hwmod: dpll_mpu_m2_ck: missing clockdomain for dpll_mpu_m2_ck.
+<6>[    0.000000,0] OMAP clockevent source: GPTIMER1 at 32768 Hz
+<6>[    0.000000,0] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 131071999ms
+<6>[    0.000183,0] Calibrating delay loop... 1990.38 BogoMIPS (lpj=7774208)
+<6>[    0.023498,0] pid_max: default: 32768 minimum: 301
+<6>[    0.070404,0] Mount-cache hash table entries: 512
+<6>[    0.072296,0] Initializing cgroup subsys debug
+<6>[    0.072326,0] Initializing cgroup subsys cpuacct
+<6>[    0.072326,0] Initializing cgroup subsys freezer
+<6>[    0.072387,0] CPU: Testing write buffer coherency: ok
+<6>[    0.072998,0] L310 cache controller enabled
+<6>[    0.073028,0] l2x0: 16 ways, CACHE_ID 0x410000c4, AUX_CTRL 0x5e470000, Cache size: 1048576 B
+<4>[    0.151123,1] CPU1: Booted secondary processor
+<6>[    0.237030,0] Brought up 2 CPUs
+<6>[    0.237030,0] SMP: Total of 2 processors activated (3989.17 BogoMIPS).
+<4>[    0.237213,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for emif_fw
+<4>[    0.239929,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l3_instr
+<4>[    0.239929,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l3_main_1
+<4>[    0.239959,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l3_main_2
+<4>[    0.239959,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l4_abe
+<4>[    0.239990,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l4_cfg
+<4>[    0.239990,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l4_per
+<4>[    0.239990,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for l4_wkup
+<4>[    0.240020,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for mpu_private
+<4>[    0.240020,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for sl2if
+<4>[    0.240081,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for usbhs_ohci
+<4>[    0.240142,0] omap_hwmod: _populate_mpu_rt_base found no _mpu_rt_va for usbhs_ehci
+<4>[    0.240142,0] omap_hwmod: l3_div_ck: missing clockdomain for l3_div_ck.
+<4>[    0.241607,0] ------------[ cut here ]------------
+<4>[    0.241607,0] WARNING: at /localrepo1/hudson/workspace/7.7.1-D-Pasteur-WIFI-MZ615_user_signed/7.7.1_pasteur-WIFI-MZ615/platform/kernel/omap4/arch/arm/mach-omap2/clock.c:342 omap2_clk_enable+0x138/0x160()
+<4>[    0.244476,0] clock: mcpdm_fck: could not enable: -16
+<4>[    0.244476,0] Modules linked in:
+<4>[    0.244506,0] Backtrace: 
+<4>[    0.244506,0] [<c0057524>] (dump_backtrace+0x0/0x10c) from [<c06334d4>] (dump_stack+0x18/0x1c)
+<4>[    0.244506,0]  r7:00000009 r6:00000156 r5:c0071014 r4:df84de98
+<4>[    0.244567,0] [<c06334bc>] (dump_stack+0x0/0x1c) from [<c00984d4>] (warn_slowpath_common+0x54/0x6c)
+<4>[    0.244567,0] [<c0098480>] (warn_slowpath_common+0x0/0x6c) from [<c0098590>] (warn_slowpath_fmt+0x38/0x40)
+<4>[    0.244628,0]  r9:00000000 r8:00000000 r7:00000000 r6:a0000013 r5:fffffff0
+<4>[    0.244628,0] r4:c0875d70
+<4>[    0.244659,0] [<c0098558>] (warn_slowpath_fmt+0x0/0x40) from [<c0071014>] (omap2_clk_enable+0x138/0x160)
+<4>[    0.244659,0]  r3:c079308c r2:c07925d0
+<4>[    0.244659,0] [<c0070edc>] (omap2_clk_enable+0x0/0x160) from [<c007a2d4>] (clk_enable+0x60/0x78)
+<4>[    0.244720,0]  r5:c08f6820 r4:c0875d70
+<4>[    0.244720,0] [<c007a274>] (clk_enable+0x0/0x78) from [<c0061814>] (_enable_clocks+0x20/0x7c)
+<4>[    0.244750,0]  r7:00000000 r6:00000001 r5:c0879cf0 r4:c0879cf0
+<4>[    0.244750,0] [<c00617f4>] (_enable_clocks+0x0/0x7c) from [<c00620d0>] (_enable+0x74/0x1d0)
+<4>[    0.244750,0]  r5:c0879cf0 r4:c0879cf0
+<4>[    0.244812,0] [<c006205c>] (_enable+0x0/0x1d0) from [<c006290c>] (_setup+0xa8/0x178)
+<4>[    0.244812,0]  r7:00000000 r6:c0062864 r5:00000002 r4:c0879cf0
+<4>[    0.244842,0] [<c0062864>] (_setup+0x0/0x178) from [<c0061194>] (omap_hwmod_for_each+0x40/0x60)
+<4>[    0.244842,0]  r5:c086a370 r4:c0879cf0
+<4>[    0.244873,0] [<c0061154>] (omap_hwmod_for_each+0x0/0x60) from [<c0010f20>] (omap_hwmod_setup_all+0x74/0xa0)
+<4>[    0.244903,0]  r7:00000013 r6:00000000 r5:c08f45a0 r4:c0043c48
+<4>[    0.244934,0] [<c0010eac>] (omap_hwmod_setup_all+0x0/0xa0) from [<c004d6b8>] (do_one_initcall+0x44/0x1a4)
+<4>[    0.244934,0] [<c004d674>] (do_one_initcall+0x0/0x1a4) from [<c00083dc>] (kernel_init+0x94/0x13c)
+<4>[    0.244934,0] [<c0008348>] (kernel_init+0x0/0x13c) from [<c009c2f0>] (do_exit+0x0/0x6e0)
+<4>[    0.244934,0]  r5:c0008348 r4:00000000
+<4>[    0.244995,0] ---[ end trace 1b75b31a2719ed1c ]---
+<3>[    0.245025,0] mcpdm: _wait_target_ready() timeout clkctrl = 0x30002
+<3>[    0.247955,0] Trying disable clock mcpdm_fck with 0 usecount
+<4>[    0.247955,0] ------------[ cut here ]------------
+<4>[    0.247985,0] WARNING: at /localrepo1/hudson/workspace/7.7.1-D-Pasteur-WIFI-MZ615_user_signed/7.7.1_pasteur-WIFI-MZ615/platform/kernel/omap4/arch/arm/plat-omap/clock.c:135 clk_disable+0x88/0x9c()
+<4>[    0.247985,0] Modules linked in:
+<4>[    0.248016,0] Backtrace: 
+<4>[    0.248016,0] [<c0057524>] (dump_backtrace+0x0/0x10c) from [<c06334d4>] (dump_stack+0x18/0x1c)
+<4>[    0.248046,0]  r7:00000009 r6:00000087 r5:c007a40c r4:00000000
+<4>[    0.248046,0] [<c06334bc>] (dump_stack+0x0/0x1c) from [<c00984d4>] (warn_slowpath_common+0x54/0x6c)
+<4>[    0.248046,0] [<c0098480>] (warn_slowpath_common+0x0/0x6c) from [<c0098510>] (warn_slowpath_null+0x24/0x2c)
+<4>[    0.248107,0]  r9:00000000 r8:00000000 r7:00000000 r6:c08f6820 r5:c0875d70
+<4>[    1.462921,0] r4:df889c08
+<4>[    1.462951,0] [<c0098558>] (warn_slowpath_fmt+0x0/0x40) from [<c0014c94>] (omap_dvfs_register_device+0x174/0x2e8)
+<4>[    1.462951,0]  r3:00000000 r2:c063b0a4
+<4>[    1.462982,0] [<c0014b20>] (omap_dvfs_register_device+0x0/0x2e8) from [<c00121ec>] (omap_init_opp_table+0x1a4/0x210)
+<4>[    1.462982,0]  r9:00000000 r8:00000000 r7:00000016 r6:df889c08 r5:00000000
+<4>[    1.463012,0] r4:c00467d0
+<4>[    1.463043,0] [<c0012048>] (omap_init_opp_table+0x0/0x210) from [<c00122fc>] (omap4_opp_init+0x38/0x100)
+<4>[    1.463043,0]  r7:00000013 r6:00000000 r5:c08f45a0 r4:c0043e6c
+<4>[    1.463073,0] [<c00122c4>] (omap4_opp_init+0x0/0x100) from [<c004d6b8>] (do_one_initcall+0x44/0x1a4)
+<4>[    1.463104,0]  r5:c08f45a0 r4:c0043e6c
+<4>[    1.463104,0] [<c004d674>] (do_one_initcall+0x0/0x1a4) from [<c00083dc>] (kernel_init+0x94/0x13c)
+<4>[    1.463134,0] [<c0008348>] (kernel_init+0x0/0x13c) from [<c009c2f0>] (do_exit+0x0/0x6e0)
+<4>[    1.463165,0]  r5:c0008348 r4:00000000
+<4>[    1.463165,0] ---[ end trace 1b75b31a2719ed1e ]---
+<4>[    1.956359,0] omap_init_opp_table: no hwmod or odev for hsi, [18] cannot add OPPs.
+<4>[    1.956390,0] omap_init_opp_table: no hwmod or odev for hsi, [19] cannot add OPPs.
+<3>[    2.097686,0] Unable to read node /System@0/GPIODev@0 from device tree!
+<3>[    2.097686,0] Unable to get gpio pin num for slider_data
+<3>[    2.097686,0] Unable to get gpio pin num for volume_gpio
+<6>[    2.098327,0] ram_console: got buffer at a0000000, size 200000
+<6>[    2.098327,0] ram_console: uncorrectable error in header
+<6>[    2.098327,0] ram_console: no valid data in buffer (sig = 0x9ea82eaa)
+<6>[    2.135498,0] console [ram-1] enabled
+<6>[    2.135498,0] omap-iommu omap-iommu.0: ducati registered
+<6>[    2.136322,0] omap-iommu omap-iommu.1: tesla registered
+<4>[    2.153472,0] highmem bounce pool size: 64 pages
+<6>[    2.153686,0] ashmem: initialized
+<6>[    2.154968,0] fuse init (API version 7.16)
+<6>[    2.155303,0] msgmni has been set to 970
+<6>[    2.155303,0] Registering char device tf_driver (122:0)
+<6>[    2.155670,0] SMCAG01.06e1.0 D   
+<6>[    2.157623,0] io scheduler noop registered
+<6>[    2.157623,0] io scheduler deadline registered (default)
+<6>[    2.157958,0] io scheduler cfq registered
+<6>[    2.157958,0] OMAP DSS rev 4.0
+<4>[    2.269470,0] misc dsscomp: failed to create debug files.
+<6>[    2.269470,0] dsscomp: initializing.
+<7>[    2.269470,0] misc dsscomp: display0=mapphone-panel
+<7>[    2.269470,0] misc dsscomp: display1=hdmi_panel
+<6>[    2.269470,0] misc dsscomp: found 2 displays and 4 overlays
+<3>[    2.270263,0] could not allocate slot
+<6>[    2.271514,0] omap-rproc omap-rproc.1: powering up ipu
+<6>[    2.271728,0] virtio_rpmsg_bus virtio0: rpmsg backend virtproc probed successfully
+<6>[    2.272155,0] virtio_rpmsg_bus virtio1: rpmsg backend virtproc probed successfully
+<6>[    2.274627,0] omap_uart.0: ttyO0 at MMIO 0x4806a000 (irq = 104) is a OMAP UART0
+<3>[    2.425109,0] Unable to get gpio pin num for ipc_bpwake_trigger
+<6>[    2.425598,0] omap_uart.1: ttyO1 at MMIO 0x4806c000 (irq = 105) is a OMAP UART1
+<6>[    2.581420,0] omap_uart.2: ttyO2 at MMIO 0x48020000 (irq = 106) is a OMAP UART2
+<6>[    2.745452,0] omap_uart.3: ttyO3 at MMIO 0x4806e000 (irq = 102) is a OMAP UART3
+<6>[    2.879211,0] GPIODev init successfully 
+<3>[    2.879211,0] ion: failed to create debug files.
+<6>[    2.879211,0] omap_ion_probe: adding heap secure_input of type 2 with be900000@1400000
+<6>[    2.879577,0] omap_ion_probe: adding heap tiler of type 4 with b68ff000@1000
+<6>[    2.879577,0] omap_ion_probe: adding heap nonsecure_tiler of type 4 with a0200000@1000
+<6>[    2.880065,0] PVR: PVRCore_Init
+<6>[    2.880493,0] PVR: PVRSRVDriverProbe(pDevice=df8a9c00)
+<6>[    2.880645,0] PVR: SGX register base: 0x56000000
+<6>[    2.880645,0] PVR: SGX register size: 65535
+<6>[    2.880645,0] PVR: SGX IRQ: 53
+<6>[    2.880645,0] PVR: EnableSystemClocks: Enabling System Clocks
+<6>[    2.881164,0] PVR_K:(Warning): EnableSGXClocks: Unable to scale SGX frequency (EBUSY) [167, /localrepo1/hudson/workspace/7.7.1-D-Pasteur-WIFI-MZ615_user_signed/7.7.1_pasteur-WIFI-MZ615/platform/kernel/omap4/drivers/gpu/pvr/omap4/sysutils_linux.c]
+<6>[    2.881439,0] PVR_K:(Warning): EnableSGXClocks: Unable to scale SGX frequency (EBUSY) [167, /localrepo1/hudson/workspace/7.7.1-D-Pasteur-WIFI-MZ615_user_signed/7.7.1_pasteur-WIFI-MZ615/platform/kernel/omap4/drivers/gpu/pvr/omap4/sysutils_linux.c]
+<6>[    2.881439,0] PVR_K:(Error): Failed to creat sgx_idle debug file [1179, /localrepo1/hudson/workspace/7.7.1-D-Pasteur-WIFI-MZ615_user_signed/7.7.1_pasteur-WIFI-MZ615/platform/kernel/omap4/drivers/gpu/pvr/omap4/sysconfig.c]
+<6>[    2.882019,0] PVR: PVRCore_Init: major device 249
+<6>[    2.886047,0] brd: module loaded
+<6>[    2.886047,0] loop: module loaded
+<6>[    2.891693,0] (stk) :sysfs entries created
+<3>[    2.891693,0] (stk) : debugfs entries creation failed 
+<4>[    2.891693,0] kim: probe of kim failed with error -5
+<6>[    2.891693,0] Loading pn544 driver
+<6>[    2.891693,0] Android kernel panic handler initialized (bind=kpanic)
+<6>[    2.891693,0] AKM8975 compass driver: initialize
+<6>[    2.893554,0] input: compass as /devices/virtual/input/input0
+<6>[    2.894012,0] Inserting sec module
+<6>[    2.894470,0] Android kernel panic mmc handler initialized
+<4>[    2.894805,0] i2c-core: driver [attiny48mu_cap_prox] using legacy suspend method
+<4>[    2.895019,0] i2c-core: driver [attiny48mu_cap_prox] using legacy resume method
+<6>[    2.895019,0] KXTF9 accelerometer driver
+<6>[    2.895568,0] <3>MSP430 msp430 sensor processor
+<6>[    2.895721,0] L3G4200D gyroscope driver
+<3>[    2.895721,0] l3g4200d_probe:Enter
+<6>[    2.895721,0] input: gyroscope as /devices/virtual/input/input1
+<6>[    2.896453,0] l3g4200d_probe:Gyro probed
+<6>[    2.896453,0] LIS3DH accelerometer driver
+<6>[    2.897430,0] input: accelerometer as /devices/virtual/input/input2
+<6>[    2.898101,0] lis3dh 4-0019: lis3dh probed
+<6>[    2.898101,0] tcmd probe
+<6>[    2.898101,0] ts27010 mux registered
+<3>[    2.898101,0] vib-pwm: vib_pwm_init
+<6>[    2.900634,0] input: cpcap-key as /devices/virtual/input/input3
+<6>[    2.900634,0] cpcap_key cpcap_key: CPCAP key device probed
+<3>[    2.901275,0] regulator_check_voltage: vaudio: operation not allowed
+<6>[    2.903320,0] cpcap spi1.0: New headset state: 0
+<6>[    2.903656,0] PPP generic driver version 2.4.2
+<6>[    2.903656,0] PPP Deflate Compression module registered
+<6>[    2.903656,0] PPP BSD Compression module registered
+<6>[    2.905029,0] PPP MPPE Compression module registered
+<6>[    2.905029,0] NET: Registered protocol family 24
+<6>[    2.906616,0] tun: Universal TUN/TAP device driver, 1.6
+<6>[    2.906616,0] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>[    2.906616,0] usbcore: registered new interface driver asix
+<6>[    2.907287,0] usbcore: registered new interface driver cdc_ether
+<6>[    2.907287,0] usbcore: registered new interface driver net1080
+<6>[    2.907623,0] usbcore: registered new interface driver cdc_subset
+<6>[    2.907623,0] usbcore: registered new interface driver zaurus
+<6>[    2.907989,0] cdc_ncm: 04-Aug-2011
+<6>[    2.907989,0] usbcore: registered new interface driver cdc_ncm
+<6>[    2.908233,0] QCUSBNet2k: 1.0.110+google
+<6>[    2.908233,0] usbcore: registered new interface driver QCUSBNet2k
+<6>[    2.908477,0] usbcore: registered new interface driver zd1201
+<5>[    2.908630,0] usbmon: debugfs is not available
+<6>[    2.908630,0] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    2.909301,0] ehci-omap ehci-omap.0: OMAP-EHCI Host Controller
+<6>[    2.909545,0] ehci-omap ehci-omap.0: new USB bus registered, assigned bus number 1
+<6>[    2.909545,0] ehci-omap ehci-omap.0: irq 109, io mem 0x4a064c00
+<6>[    2.946746,0] ehci-omap ehci-omap.0: USB 2.0 started, EHCI 1.00
+<6>[    2.946746,0] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    2.947143,0] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    2.947143,0] usb usb1: Product: OMAP-EHCI Host Controller
+<6>[    2.947143,0] usb usb1: Manufacturer: Linux 3.0.8-g09a8c55 ehci_hcd
+<6>[    2.947143,0] usb usb1: SerialNumber: ehci-omap.0
+<6>[    2.947143,0] hub 1-0:1.0: USB hub found
+<6>[    2.947143,0] hub 1-0:1.0: 3 ports detected
+<6>[    2.979797,0] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<6>[    2.979919,0] ohci-omap3 ohci-omap3.0: OMAP3 OHCI Host Controller
+<6>[    2.979919,0] ohci-omap3 ohci-omap3.0: new USB bus registered, assigned bus number 2
+<6>[    2.980377,0] ohci-omap3 ohci-omap3.0: irq 108, io mem 0x4a064800
+<6>[    3.070312,0] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+<6>[    3.070312,0] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    3.070312,0] usb usb2: Product: OMAP3 OHCI Host Controller
+<6>[    3.070312,0] usb usb2: Manufacturer: Linux 3.0.8-g09a8c55 ohci_hcd
+<6>[    3.070312,0] usb usb2: SerialNumber: ohci-omap3.0
+<6>[    3.070312,0] hub 2-0:1.0: USB hub found
+<6>[    3.070312,0] hub 2-0:1.0: 3 ports detected
+<6>[    3.070312,0] usbcore: registered new interface driver cdc_acm
+<6>[    3.072021,0] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    3.072021,0] usbcore: registered new interface driver usblp
+<6>[    3.072021,0] Initializing USB Mass Storage driver...
+<6>[    3.072021,0] usbcore: registered new interface driver usb-storage
+<6>[    3.072021,0] USB Mass Storage support registered.
+<6>[    3.073059,0] usbcore: registered new interface driver usbserial
+<6>[    3.073059,0] usbserial: USB Serial Driver core
+<6>[    3.073059,0] USB Serial support registered for moto-modem
+<6>[    3.073516,0] usbcore: registered new interface driver moto-modem
+<6>[    3.073913,0] USB Serial support registered for QSC 6085 Modem Driver
+<6>[    3.073913,0] usbcore: registered new interface driver cdma-modem
+<6>[    3.074340,0] USB Serial support registered for moto-flashqsc
+<6>[    3.074340,0] usbcore: registered new interface driver moto-flashqsc
+<6>[    3.074340,0] oob_wake_init: initializing oob-wake
+<6>[    3.076629,0] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    3.076660,0] android_usb gadget: Number of LUNs=1
+<6>[    3.076660,0]  lun0: LUN: removable file: (no medium)
+<6>[    3.076660,0] android_usb gadget: android_usb ready
+<6>[    3.076660,0] musb-hdrc musb-hdrc: MUSB HDRC host driver
+<6>[    3.078369,0] musb-hdrc musb-hdrc: new USB bus registered, assigned bus number 3
+<6>[    3.078369,0] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    3.078369,0] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    3.078369,0] usb usb3: Product: MUSB HDRC host driver
+<6>[    3.078369,0] usb usb3: Manufacturer: Linux 3.0.8-g09a8c55 musb-hcd
+<6>[    3.078369,0] usb usb3: SerialNumber: musb-hdrc
+<6>[    3.079681,0] hub 3-0:1.0: USB hub found
+<6>[    3.079681,0] hub 3-0:1.0: 1 port detected
+<6>[    3.079681,0] mousedev: PS/2 mouse device common for all mice
+<6>[    3.081359,0] input: omap4-keypad as /devices/platform/omap/omap4-keypad/input/input4
+<6>[    3.082153,0] qtouch_force_reset: Forcing HW reset
+<6>[    3.640167,0] qtouch_process_info_block: Build version is 0x10
+<6>[    3.640716,0] qtouch_process_info_block: Object 37 @ 0x006a (130) insts 1 rep_ids 0
+<6>[    3.641326,0] qtouch_process_info_block: Object 44 @ 0x00ec (1) insts 1 rep_ids 0
+<6>[    3.641906,0] qtouch_process_info_block: Object 5 @ 0x00ed (9) insts 1 rep_ids 0
+<6>[    3.642456,0] qtouch_process_info_block: Object 6 @ 0x00f6 (6) insts 1 rep_ids 1
+<6>[    3.643035,0] qtouch_process_info_block: Object 38 @ 0x00fc (64) insts 1 rep_ids 0
+<6>[    3.643646,0] qtouch_process_info_block: Object 7 @ 0x013c (3) insts 1 rep_ids 0
+<6>[    3.644195,0] qtouch_process_info_block: Object 8 @ 0x013f (10) insts 1 rep_ids 0
+<6>[    3.644805,0] qtouch_process_info_block: Object 9 @ 0x0149 (35) insts 1 rep_ids 16
+<6>[    3.645416,0] qtouch_process_info_block: Object 15 @ 0x016c (11) insts 2 rep_ids 1
+<6>[    3.645935,0] qtouch_process_info_block: Object 18 @ 0x0182 (2) insts 1 rep_ids 0
+<6>[    3.646545,0] qtouch_process_info_block: Object 25 @ 0x0184 (14) insts 1 rep_ids 1
+<6>[    3.647155,0] qtouch_process_info_block: Object 40 @ 0x0192 (5) insts 1 rep_ids 0
+<6>[    3.647705,0] qtouch_process_info_block: Object 42 @ 0x0197 (10) insts 1 rep_ids 1
+<6>[    3.648284,0] qtouch_process_info_block: Object 46 @ 0x01a1 (9) insts 1 rep_ids 1
+<6>[    3.648895,0] qtouch_process_info_block: Object 47 @ 0x01aa (16) insts 1 rep_ids 0
+<6>[    3.649414,0] qtouch_process_info_block: Object 54 @ 0x01ba (16) insts 1 rep_ids 1
+<4>[    3.649932,0] qtouch_process_info_block: Checksum mismatch (0x00000b5b != 0x00217334)
+<6>[    3.649932,0] qtouch_process_info_block: qtouch-obp-ts found. family 0xa0, variant 0x3, ver 0x10, build 0xac, matrix 33x52, 16 objects.
+<6>[    3.650268,0] qtouch_ts_probe: FW version is 0x10 Build 0xAC
+<6>[    3.650268,0] qtouch_ts_probe: Chip type matched
+<6>[    3.650360,0] qtouch_ts_probe: Reflash not needed
+<6>[    3.650939,0] input: qtouch-touchscreen as /devices/virtual/input/input5
+<6>[    3.651672,1] qtouch_do_cmd_proc_msg:EEPROM checksum matches
+<6>[    3.651702,1] qtouch_do_cmd_proc_msg: Reset done.
+<6>[    3.651702,0] BMP180 barometer driver
+<6>[    3.652038,1] qtouch_do_cmd_proc_msg: Self-calibration started.
+<6>[    3.652770,0] input: barometer as /devices/virtual/input/input6
+<6>[    3.652984,0] bmp180_probe:Probe completed
+<6>[    3.653717,0] input: max9635_als as /devices/virtual/input/input7
+<4>[    3.654602,0] i2c-core: driver [max9635] using legacy suspend method
+<4>[    3.654602,0] i2c-core: driver [max9635] using legacy resume method
+<6>[    3.655059,0] using input dev cpcap-key for key reset
+<6>[    3.655181,0] using input dev omap4-keypad for key reset
+<6>[    3.656707,0] using rtc device, cpcap_rtc, for alarms
+<6>[    3.656707,0] cpcap_rtc cpcap_rtc: rtc core: registered cpcap_rtc as rtc0
+<6>[    3.657897,0] i2c /dev entries driver
+<6>[    3.657897,0] lirc_dev: IR Remote Control driver registered, major 247 
+<6>[    3.657897,0] IR NEC protocol handler initialized
+<6>[    3.657897,0] IR RC5(x) protocol handler initialized
+<6>[    3.657897,0] IR RC6 protocol handler initialized
+<6>[    3.657897,0] IR JVC protocol handler initialized
+<6>[    3.657897,0] IR Sony protocol handler initialized
+<6>[    3.657897,0] IR RC5 (streamzap) protocol handler initialized
+<6>[    3.659301,0] IR LIRC bridge handler initialized
+<6>[    3.659545,0] Linux video capture interface: v2.00
+<6>[    3.659667,0] gspca: v2.13.0 registered
+<6>[    3.659912,0] usbcore: registered new interface driver benq
+<6>[    3.659912,0] usbcore: registered new interface driver conex
+<6>[    3.660278,0] usbcore: registered new interface driver cpia1
+<6>[    3.660278,0] usbcore: registered new interface driver etoms
+<6>[    3.660614,0] usbcore: registered new interface driver finepix
+<6>[    3.660766,0] usbcore: registered new interface driver jeilinj
+<6>[    3.660766,0] usbcore: registered new interface driver kinect
+<6>[    3.660980,0] usbcore: registered new interface driver konica
+<6>[    3.661315,0] usbcore: registered new interface driver mars
+<6>[    3.661499,0] usbcore: registered new interface driver mr97310a
+<6>[    3.661499,0] usbcore: registered new interface driver nw80x
+<6>[    3.661499,0] usbcore: registered new interface driver ov519
+<6>[    3.661895,0] usbcore: registered new interface driver ov534
+<6>[    3.661895,0] usbcore: registered new interface driver ov534_9
+<6>[    3.662475,0] usbcore: registered new interface driver pac207
+<6>[    3.662475,0] usbcore: registered new interface driver pac7302
+<6>[    3.662475,0] usbcore: registered new interface driver pac7311
+<6>[    3.662475,0] usbcore: registered new interface driver sn9c2028
+<6>[    3.662475,0] usbcore: registered new interface driver sn9c20x
+<6>[    3.662475,0] usbcore: registered new interface driver sonixb
+<6>[    3.663543,0] usbcore: registered new interface driver sonixj
+<6>[    3.663696,0] usbcore: registered new interface driver spca500
+<6>[    3.663696,0] usbcore: registered new interface driver spca501
+<6>[    3.663696,0] usbcore: registered new interface driver spca505
+<6>[    3.663696,0] usbcore: registered new interface driver spca506
+<6>[    3.663696,0] usbcore: registered new interface driver spca508
+<6>[    3.663696,0] usbcore: registered new interface driver spca561
+<6>[    3.663696,0] usbcore: registered new interface driver spca1528
+<6>[    3.664978,0] usbcore: registered new interface driver sq905
+<6>[    3.664978,0] usbcore: registered new interface driver sq905c
+<6>[    3.664978,0] usbcore: registered new interface driver sq930x
+<6>[    3.664978,0] usbcore: registered new interface driver sunplus
+<6>[    3.664978,0] usbcore: registered new interface driver stk014
+<6>[    3.664978,0] usbcore: registered new interface driver stv0680
+<6>[    3.664978,0] usbcore: registered new interface driver t613
+<6>[    3.664978,0] usbcore: registered new interface driver tv8532
+<6>[    3.664978,0] usbcore: registered new interface driver vc032x
+<6>[    3.666656,0] usbcore: registered new interface driver vicam
+<6>[    3.666839,0] usbcore: registered new interface driver xirlink-cit
+<6>[    3.666839,0] usbcore: registered new interface driver zc3xx
+<6>[    3.667236,0] usbcore: registered new interface driver ALi m5602
+<6>[    3.667480,0] usbcore: registered new interface driver STV06xx
+<6>[    3.667541,0] usbcore: registered new interface driver gspca_gl860
+<6>[    3.667541,0] usbcore: registered new interface driver uvcvideo
+<6>[    3.668029,0] USB Video Class driver (v1.1.0)
+<6>[    3.668029,0] dmm: probe base: fd300000, irq 145
+<4>[    3.670043,0] tiler tiler: failed to create debug files.
+<6>[    3.670288,0] Driver for 1-wire Dallas network protocol.
+<6>[    3.670623,0] omap_hdq omap_hdq.0: OMAP HDQ Hardware Rev 0.6. Driver in Interrupt mode
+<3>[    3.862609,0] omap_hdq omap_hdq.0: break wait elapsed
+<6>[    3.862976,0] cpcap_bq24618_probe:BQ24618 Probe enter
+<6>[    3.863891,0] BQ24618 disabled
+<6>[    3.864685,0] cpcap_bq24618_probe:BQ24618 probe exit
+<6>[    3.865447,0] lm75 1-0048: hwmon0: sensor 'tmp105'
+<6>[    3.869445,0] OMAP Watchdog Timer Rev 0x00: initial timeout 60 sec
+<6>[    3.870697,0] device-mapper: uevent: version 1.0.3
+<6>[    3.871002,0] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    3.871124,0] Bluetooth: HCI UART driver ver 2.2
+<6>[    3.871276,0] Bluetooth: HCI H4 protocol initialized
+<6>[    3.871459,0] cpuidle: using governor ladder
+<6>[    3.871612,0] cpuidle: using governor menu
+<7>[    3.874755,0] Registered led device: lcd-backlight
+<4>[    3.875122,0] lp8550_check_for_fault: fault detected [0x78] & cleared
+<7>[    3.875793,0] Registered led device: camera-privacy
+<7>[    3.876464,0] Registered led device: red
+<7>[    3.876708,0] Registered led device: green
+<7>[    3.876861,0] Registered led device: blue
+<6>[    3.877807,0] usbcore: registered new interface driver usbhid
+<6>[    3.877899,0] usbhid: USB HID core driver
+<6>[    3.878326,0] logger: created 256K log 'log_main'
+<6>[    3.878570,0] logger: created 256K log 'log_events'
+<6>[    3.878753,0] logger: created 256K log 'log_radio'
+<6>[    3.878997,0] logger: created 256K log 'log_system'
+<6>[    3.879272,0] zram: num_devices not specified. Using default: 1
+<6>[    3.879425,0] zram: Creating 1 devices ...
+<6>[    3.881408,0] OMAP HSI: HSI driver version 0.4.3
+<3>[    3.881744,0] OMAP HSI: Platform DRIVER register FAILED: -19
+<6>[    3.882202,0] usbcore: registered new interface driver snd-usb-audio
+<6>[    3.884338,0] ENTER: MOTSND SoC init
+<6>[    3.896087,0] asoc: null-codec-dai <-> MultiMedia1 LP mapping ok
+<6>[    3.897491,0] asoc: cpcap codec <-> omap-mcbsp-dai.2 mapping ok
+<6>[    3.898956,0] asoc: cpcap in-call <-> MODEM mapping ok
+<6>[    3.899993,0] asoc: cpcap fm <-> FMDummy mapping ok
+<6>[    3.901458,0] asoc: cpcap bt-call <-> MODEM mapping ok
+<6>[    3.902893,0] asoc: cpcap bt <-> omap-mcbsp-dai.2 mapping ok
+<6>[    3.904357,0] asoc: null-codec-dai <-> omap-mcasp-dai mapping ok
+<6>[    3.905731,0] asoc: BPVoice <-> omap-mcbsp-dai.2 mapping ok
+<6>[    3.906585,0] asoc: cpcap stdac <-> omap-mcbsp-dai.1 mapping ok
+<6>[    3.909393,0] asoc: hdmi-audio-codec <-> hdmi-audio-dai mapping ok
+<6>[    3.910003,0] ALSA device list:
+<6>[    3.910095,0]   #0: Motorola MAPPHONE
+<6>[    3.910186,0]   #1: OMAP4HDMI
+<6>[    3.910430,0] GACT probability NOT on
+<6>[    3.910522,0] Mirror/redirect action on
+<6>[    3.910614,0] u32 classifier
+<6>[    3.910705,0]     Actions configured
+<6>[    3.910858,0] Netfilter messages via NETLINK v0.30.
+<6>[    3.911010,0] nf_conntrack version 0.5.0 (13503 buckets, 54012 max)
+<6>[    3.911895,0] ctnetlink v0.93: registering with nfnetlink.
+<6>[    3.912048,0] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    3.912200,0] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    3.912628,0] xt_time: kernel timezone is -0000
+<6>[    3.914428,0] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.914703,0] arp_tables: (C) 2002 David S. Miller
+<6>[    3.914916,0] TCP cubic registered
+<6>[    3.915161,0] NET: Registered protocol family 10
+<6>[    3.920379,0] Mobile IPv6
+<6>[    3.920562,0] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.920898,0] IPv6 over IPv4 tunneling driver
+<6>[    3.925903,0] NET: Registered protocol family 17
+<6>[    3.926025,0] NET: Registered protocol family 15
+<5>[    3.926300,0] Bridge firewalling registered
+<6>[    3.926574,0] Bluetooth: RFCOMM TTY layer initialized
+<6>[    3.926666,0] Bluetooth: RFCOMM socket layer initialized
+<6>[    3.926818,0] Bluetooth: RFCOMM ver 1.11
+<6>[    3.926910,0] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    3.926971,0] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    3.927246,0] NET: Registered protocol family 35
+<6>[    3.927429,0] NET: Registered protocol family 37
+<6>[    3.928588,0] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+<6>[    3.928771,0] ThumbEE CPU extension supported.
+<5>[    3.928955,0] Registering SWP/SWPB emulation handler
+<4>[    3.929107,0] voltdm_debugfs_init: Unable to create debugfs directory for vdd_core
+<4>[    3.929351,0] voltdm_debugfs_init: Unable to create debugfs directory for vdd_iva
+<4>[    3.929565,0] voltdm_debugfs_init: Unable to create debugfs directory for vdd_mpu
+<6>[    3.933288,0] Reprogramming LPDDR2 timings to 400000000 Hz
+<3>[    3.934204,0] Power Management for TI OMAP4.
+<6>[    3.934448,0] OMAP4 PM: Static dependency added between MPUSS <-> EMIF, MPUSS <-> L4_PER/CFG MPUSS <-> L3_MAIN_1.
+<6>[    3.934600,0] OMAP4 PM: Static dependency added between DUCATI <-> L4_PER/CFG and DUCATI <-> L3.
+<6>[    3.935089,0] omap4_idle_init:qos_add_request for CPU_DMA_LATENCY for 120secs
+<4>[    3.935546,0] sr_init: No PMIC hook to init smartreflex
+<6>[    3.935791,0] smartreflex smartreflex.0: omap_sr_probe: SmartReflex driver initialized
+<6>[    3.935974,0] smartreflex smartreflex.1: omap_sr_probe: SmartReflex driver initialized
+<6>[    3.936096,0] smartreflex smartreflex.2: omap_sr_probe: SmartReflex driver initialized
+<6>[    3.936248,0] SmartReflex Class3 initialized
+<6>[    3.936523,0] clock: disabling unused clocks to save power
+<6>[    3.937988,0] cannot apply mgr(lcd) on inactive device
+<4>[    3.938079,0] omapfb omapfb: failed to apply dispc config
+<6>[    3.938232,0] cannot apply mgr(tv) on inactive device
+<4>[    3.938323,0] omapfb omapfb: failed to apply dispc config
+<6>[    3.938476,0] cannot apply mgr(lcd2) on inactive device
+<4>[    3.938568,0] omapfb omapfb: failed to apply dispc config
+<6>[    3.938720,0] DSI: dsi_vc_cmd = 1, dsi_vc_video = 0
+<6>[    3.938812,0] DT: x_res=1280 y_res=800 phy_w_mm=217 phy_h_mm=136
+<6>[    3.938964,0] DT: hfp=342 hsw=9 hbp=1 vfp=4 vsw=1 vbp=3
+<6>[    3.939025,0] DT: clk_lane=1 clk_pos=0 d1_lane=2 d1_pos=0 d2_lane=3 d2_pos=0
+<6>[    3.939208,0] DT: d3_lane=4 d3_pos=0 d4_lane=5 d4_pos=0
+<6>[    3.939270,0] DT: panel_id=0x1a0004 type= 1
+<6>[    3.939422,0] DT: regn=11 regm=167 regm3=5 regm4=5 lp_clk_div=8 lck_div=1 pck_div=2
+<6>[    3.939514,0] DT: te_support=1, te_type=0
+<6>[    3.939666,0] DT: number of power supplies=1
+<6>[    3.939758,0] DT: Supply #0, reg name=sw5, gpio=96, gpio_en_val=1
+<6>[    3.953033,0] Mapphone Display is ENABLE
+<6>[    3.953582,0] regulator_init_complete: vwlan1: disabling
+<6>[    3.953857,0] regulator_init_complete: vrfref: disabling
+<6>[    3.954223,0] regulator_init_complete: vrf2: disabling
+<6>[    3.955047,0] omaplfbOMAPLFBInit: Blitsville gc2d not present, blits disabled
+<3>[    3.955902,0] regulator_check_voltage: vusb: operation not allowed
+<6>[    3.957733,0] cpcap_usb_det cpcap_usb_det: CPCAP USB detection device probed
+<6>[    3.960998,0] cpcap_rtc cpcap_rtc: setting system clock to 2014-03-13 07:44:23 UTC (1394696663)
+<4>[    3.961486,0] Warning: unable to open an initial console.
+<6>[    3.961639,0] Freeing init memory: 276K
+<4>[    3.966766,0] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<6>[    3.972808,1] cpcap spi1.0: notify_accy: accy=USB
+<6>[    3.974517,1] android_usb_set_connected - connected = 1, accy = 0
+<6>[    3.996673,0] mmc1: new high speed MMC card at address 0001
+<6>[    3.997192,0] mmcblk1: mmc1:0001 SEM16G 14.8 GiB 
+<6>[    3.997406,0] mmcblk1boot0: mmc1:0001 SEM16G partition 1 1.00 MiB
+<6>[    3.997711,0] mmcblk1boot1: mmc1:0001 SEM16G partition 2 1.00 MiB
+<4>[    4.004547,1] Alternate GPT is invalid, using primary GPT.
+<6>[    4.004760,1]  mmcblk1: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20
+<6>[    4.010406,1]  mmcblk1boot1: unknown partition table
+<6>[    4.011596,1]  mmcblk1boot0: unknown partition table
+<6>[    4.011871,1] mmc_blk_probe: adding mmcblk0p16:kpanic
+<3>[    4.014587,1] apanic: Bound to mmc block device 'mmcblk0p16(179:16)'
+<6>[    4.014709,1] apanic: No panic data available
+<6>[    4.058807,0] keychord: using input dev cpcap-key for fevent
+<6>[    4.058898,0] keychord: using input dev omap4-keypad for fevent
+<4>[    4.148468,0] mmc2: card claims to support voltages below the defined range. These will be ignored.
+<4>[    4.168151,0] mmc2: queuing unknown CIS tuple 0x91 (3 bytes)
+<6>[    4.169036,0] mmc2: new high speed SDIO card at address 0001
+<6>[    4.201721,0] EXT4-fs (mmcblk1p17): mounted filesystem with ordered data mode. Opts: (null)
+<6>[    4.465362,0] EXT4-fs (mmcblk1p5): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[    4.648651,0] omap-rproc omap-rproc.1: Loaded BIOS image ducati-m3.bin, size 5690048
+<6>[    4.648895,0] omap-rproc omap-rproc.1: BIOS image version is 2
+<6>[    4.783142,1] EXT4-fs (mmcblk1p20): mounted filesystem with ordered data mode. Opts: (null)
+<6>[    4.868041,0] omap-iommu omap-iommu.0: iommu_get: ducati qos_request
+<4>[    4.884826,0] omap_hwmod: ipu: failed to hardreset
+<6>[    4.885009,0] omap-iommu omap-iommu.0: ducati: version 2.1
+<6>[    4.892791,0] omap-rproc omap-rproc.1: remote processor ipu is now up
+<6>[    4.910552,0] omap_rpmsg_mbox_callback: received echo reply from ipu !
+<6>[    4.910736,0] omap_rpmsg_mbox_callback: received echo reply from ipu !
+<6>[    4.910827,0] omap_rpmsg_mbox_callback: received echo reply from ipu !
+<6>[    4.910980,0] omap_rpmsg_mbox_callback: received echo reply from ipu !
+<6>[    4.911132,0] virtio_rpmsg_bus virtio0: creating channel rpmsg-client-sample addr 0x32
+<6>[    4.911437,0] virtio_rpmsg_bus virtio0: creating channel rpmsg-client-sample addr 0x33
+<6>[    4.911712,0] virtio_rpmsg_bus virtio0: creating channel rpmsg-hdmiwa addr 0x46
+<6>[    4.911956,0] virtio_rpmsg_bus virtio0: creating channel rpmsg-omx addr 0x3c
+<6>[    4.912322,0] rpmsg_omx rpmsg-omx0: new OMX connection srv channel: 1024 -> 60!
+<3>[    5.050903,1] Invalid Device Structure
+<6>[    5.063537,0] virtio_rpmsg_bus virtio1: creating channel rpmsg-omx addr 0x3c
+<6>[    5.064117,0] rpmsg_omx rpmsg-omx1: new OMX connection srv channel: 1024 -> 60!
+<6>[    5.898132,0] cpcap spi1.0: notify_accy: accy=NONE
+<6>[    5.900238,0] android_usb_set_connected - connected = 0, accy = 0
+<6>[    5.900421,0] EVENT_NONE: pull down, disable gadget
+<6>[    5.900604,0] EVENT_NONE: pull up, enable gadget anyway
+<6>[    5.900787,0] android_work: did not send uevent (0 0   (null))
+<6>[   12.895050,0] cpcap spi1.0: notify_accy: accy=USB
+<6>[   12.897216,1] android_usb_set_connected - connected = 1, accy = 0
+<6>[   13.367034,0] android_work: sent uevent USB_STATE=CONNECTED
+<6>[   15.499328,1] EXT4-fs (mmcblk1p20): mounted filesystem with ordered data mode. Opts: (null)
+<6>[   15.541412,0] EXT4-fs (mmcblk1p20): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+<4>[   15.595031,0] EXT4-fs warning (device mmcblk1p19): ext4_clear_journal_err:4154: Filesystem error recorded from previous mount: IO failure
+<4>[   15.595184,0] EXT4-fs warning (device mmcblk1p19): ext4_clear_journal_err:4155: Marking fs in need of filesystem check.
+<4>[   15.596313,0] EXT4-fs (mmcblk1p19): warning: mounting fs with errors, running e2fsck is recommended
+<6>[   15.597473,0] EXT4-fs (mmcblk1p19): recovery complete
+<6>[   15.598480,0] EXT4-fs (mmcblk1p19): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[   15.630035,0] EXT4-fs (mmcblk1p18): mounted filesystem with ordered data mode. Opts: barrier=1
+<6>[   15.717620,1] Compat-wireless backport release: compat-wireless-2011-05-19-1-g6f4e670
+<6>[   15.717742,1] Backport based on wl12xx.git v2.6.39-1265-gf2d683c
+<6>[   15.740234,1] cfg80211: Calling CRDA to update world regulatory domain
+<6>[   15.754425,0] cfg80211: World regulatory domain updated:
+<6>[   15.754699,0] cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+<6>[   15.754913,0] cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+<6>[   15.755065,0] cfg80211:     (2457000 KHz - 2482000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+<6>[   15.755279,0] cfg80211:     (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+<6>[   15.755554,0] cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+<6>[   15.755798,0] cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+<6>[   16.712738,0] SMC: SecureCRC=0xCFDC2A68
+<4>[   16.719146,0] Disabling non-boot CPUs ...
+<5>[   16.738067,0] CPU1: shutdown
+<6>[   16.910369,0] SMC PA: INFO 00000001 00:00:00.000 ------ ------  --------------- Booting... (t=07:44:36.444) SMCXG01.06.33969     /ICS Integration with IPR
+<6>[   16.910552,0] SMC PA: INFO 00000002 00:00:00.000 ------ ------  --------------- M
+<6>[   16.913024,0] SMC PA: INFO 00000003 00:00:00.001 P-0005 T-000B IPRM decode ---- SSPICreate
+<6>[   16.913208,0] SMC PA: INFO 00000004 00:00:00.003 ------ ------  --------------- Booted
+<6>[   16.913360,0] Enabling non-boot CPUs ...
+<4>[   16.924377,1] CPU1: Booted secondary processor
+<6>[   16.925109,1] Switched to NOHz mode on CPU #1
+<6>[   16.932983,0] CPU1 is up
+<2>[   17.800262,0] EXT4-fs error (device mmcblk1p19): ext4_init_inode_table:1288: comm ext4lazyinit: Something is wrong with group 0
+<2>[   17.800292,0] Used itable blocks: 467itable unused count: 0
+<2>[   17.800323,0] 
+<3>[   17.801391,0] Aborting journal on device mmcblk1p19-8.
+<2>[   17.804138,0] EXT4-fs (mmcblk1p19): Remounting filesystem read-only
+<2>[   17.804718,0] EXT4-fs error (device mmcblk1p19) in ext4_init_inode_table:1331: IO failure
+<6>[   17.960479,0] SMC PA: INFO 00000005 00:00:01.050 P-0001 T-0009 System --------- Mounting partition 1...
+<6>[   17.964477,0] SMC PA: INFO 00000006 00:00:01.054 P-0001 T-0009 System --------- File system mounted successfully in partition 1
+<3>[   18.233886,1] init: untracked pid 171 exited
+<3>[   18.234588,1] init: cannot find '/system/bin/upgrade_certs', disabling 'upgrade_certs'
+<3>[   18.234985,1] init: cannot find '/system/bin/dspexec', disabling 'baseimage'
+<3>[   18.246490,1] init: cannot find '/system/bin/tund', disabling 'tund'
+<3>[   18.246856,1] init: cannot find '/system/etc/12m_files_copy.sh', disabling '12m_files_copy'
+<3>[   18.251953,1] init: cannot find '/system/bin/catcommands', disabling 'catcommands'
+<3>[   18.258117,1] init: cannot find '/system/bin/msp430', disabling 'msp430'
+<3>[   18.258239,1] init: cannot find '/system/bin/ispupgrade', disabling 'ispupgrade'
+<3>[   18.263214,1] init: cannot find '/system/bin/ee_driver', disabling 'locEe'
+<6>[   18.287017,1] Bluetooth: Bluetooth Driver for TI WiLink - Version 1.0
+<3>[   18.287994,1] init: cannot find '/system/bin/ftmipcd', disabling 'ftmipcd'
+<3>[   18.288757,1] init: cannot find '/system/bin/aepls001', disabling 'aepls001'
+<6>[   18.299957,1] (stc): st_register(2) 
+<6>[   18.300048,1] (stc):  chnl_id list empty :2 
+<6>[   18.300231,1] (stk) : st_kim_start
+<6>[   18.368103,0] warning: `CifsMount' uses 32-bit capabilities (legacy support in use)
+<6>[   18.434936,0] cpcap spi1.0: CPCAP uC: open status:0
+<6>[   18.435119,0] BQ24618 driver opened
+<6>[   18.502593,1] PVR: Installing MISR with cookie c096c444
+<6>[   18.519958,1] PVR: Installing device LISR SGX ISR on IRQ 53 with cookie dfb4f7c0
+<6>[   18.520202,1] PVR: OSUnMapPhysToLin: unmapping 65535 bytes from e0fa0000
+<6>[   18.520355,1] PVR: SysFinalise: Version string: SGX revision = 1.2.0
+<6>[   18.602966,1] (stk) :ldisc_install = 1
+<6>[   18.654296,1] (stc): st_tty_open 
+<6>[   18.654510,1] (stk) :line discipline installed
+<6>[   18.655151,1] (stk) :TIInit_10.6.15.btsenable_store: set enable = 0; old enable = 0
+<3>[   18.713165,1] android_usb: already disabled
+<4>[   18.713684,1] enable_store: set enable = 1; old enable = 0
+<6>[   18.713867,1] mtp_bind_config
+<6>[   18.713958,1] adb_bind_config
+<6>[   18.717041,1] (stc): st_register(9) 
+<6>[   18.717224,1] (stc):  ST_REG_IN_PROGRESS:9 
+<6>[   18.717376,1] (stc): add_channel_to_table: id 9
+<6>[   18.742370,1] adb_open
+<6>[   18.803924,0] android_usb gadget: high speed config #1: android
+<6>[   18.804077,0] config functions: ptp,adb
+<6>[   18.804412,0] android_work: sent uevent USB_STATE=CONFIGURED
+<6>[   18.979461,1] (stc):  st_reg_complete 
+<6>[   18.979553,1] (stc): protocol 9's cb sent 0
+<6>[   18.979797,1] (stc): add_channel_to_table: id 2
+<6>[   18.980072,1] (stc): st_register(3) 
+<6>[   18.980163,1] (stc): add_channel_to_table: id 3
+<6>[   18.980346,1] (stc): st_register(4) 
+<6>[   18.980438,1] (stc): add_channel_to_table: id 4
+<4>[   19.591583,1] misc dsscomp: [df336000] ignoring set failure -22
+<6>[   19.604553,1] ignoring apply mgr(lcd) while blanking
+<6>[   19.851898,0] panel resume.
+<6>[   20.073822,1] Mapphone Display is ENABLE
+<6>[   20.745269,0] rpmsg_omx rpmsg-omx1: local addr assigned: 0x401
+<6>[   20.746551,0] omap-iommu omap-iommu.0: iommu_get: ducati qos_request
+<4>[   20.763366,0] omap_hwmod: ipu: failed to hardreset
+<6>[   20.770294,0] omap-iommu omap-iommu.0: ducati: version 2.1
+<6>[   20.886474,0] rpmsg_omx rpmsg7: conn rsp: status 0 addr 101
+<3>[   20.906219,0] regulator_check_voltage: vcam: operation not allowed
+<6>[   21.004943,0] (stc): remove_channel_from_table: id 2
+<6>[   21.005065,0] (stc): remove_channel_from_table: id 3
+<6>[   21.005218,0] (stc): remove_channel_from_table: id 4
+<3>[   21.157379,0] regulator_check_voltage: vcam: operation not allowed
+<6>[   21.639434,0] rpmsg_omx rpmsg-omx1: Disconnecting from OMX service at 101
+<6>[   21.640197,0] rpmsg_omx rpmsg-omx1: local addr assigned: 0x401
+<6>[   21.641815,0] rpmsg_omx rpmsg7: conn rsp: status 0 addr 101
+<6>[   21.887695,0] BQ24618 500mA set
+<6>[   21.887939,0] BQ24618 4.2V set
+<6>[   21.888092,0] BQ24618 enabled
+<6>[   22.136962,0] rpmsg_omx rpmsg-omx1: Disconnecting from OMX service at 101
+<6>[   27.907440,0] BQ24618 500mA set
+<6>[   27.907623,0] BQ24618 3.8V set
+<6>[   41.977905,0] BQ24618 500mA set
+<6>[   41.978149,0] BQ24618 4.2V set
+<6>[   43.973724,0] BQ24618 500mA set
+<6>[   43.974029,0] BQ24618 3.8V set
+<6>[   45.992218,0] BQ24618 500mA set
+<6>[   45.993011,0] BQ24618 4.2V set
+<3>[   67.358123,0] lvds panel i2c is not registered
+<6>[   67.438903,0] request_suspend_state: wakeup (3->0) at 67435699466 (2014-03-13 07:45:26.973419191 UTC)
+<6>[   67.673095,1] (stc): st_register(2) 
+<6>[   67.673187,1] (stc): add_channel_to_table: id 2
+<6>[   67.673431,1] (stc): st_register(3) 
+<6>[   67.673522,1] (stc): add_channel_to_table: id 3
+<6>[   67.673736,1] (stc): st_register(4) 
+<6>[   67.673828,1] (stc): add_channel_to_table: id 4
+<3>[   68.336730,1] init: sys_prop: permission denied uid:1000  name:bluetooth.eventloop.dbus
+<6>[   68.461639,1] (stc): remove_channel_from_table: id 2
+<6>[   68.461730,1] (stc): remove_channel_from_table: id 3
+<6>[   68.461883,1] (stc): remove_channel_from_table: id 4
+<6>[   68.660186,1] acc_open
+<6>[   68.660369,1] acc_release
+<6>[   68.961273,0] wl1271: found nvs file ti-connectivity/wl12xx-upd-nvs.bin
+<6>[   68.971588,0] wl1271: loaded
+<3>[   68.973358,0] init: cannot find '/system/bin/initial_regdom.sh', disabling 'initial_regdom'
+<6>[   70.108703,0] wl1271: cmd template_set: wl12xx_nadv_template
+<6>[   70.156402,0] wl1271: firmware booted (Rev 7.3.7.16.79)
+<6>[   70.171905,0] wl1271: BSS_CHANGED_NADV_FILTER nadv_addr6_cnt=0
+<6>[   70.172058,0] wl1271: wl1271_acx_nadv_filter
+<7>[   70.172149,0] in6_addr: 0:0:0:0:0:0:0:0
+<7>[   70.172271,0] in6_addr: 0:0:0:0:0:0:0:0
+<6>[   70.174682,0] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<7>[   72.055603,1] nl80211_authenticate() called
+<7>[   72.089691,0] wlan0: authenticate with 30:46:9a:99:c3:96 (try 1)
+<7>[   72.195587,1] wlan0: authenticated
+<7>[   72.259613,0] wlan0: waiting for beacon from 30:46:9a:99:c3:96
+<7>[   72.304870,0] wlan0: beacon received
+<7>[   72.339904,0] wlan0: associate with 30:46:9a:99:c3:96 (try 1)
+<7>[   72.344512,0] wlan0: RX AssocResp from 30:46:9a:99:c3:96 (capab=0x411 status=0 aid=5)
+<7>[   72.344757,0] wlan0: associated
+<6>[   72.346771,0] wl1271: BSS_CHANGED_NADV_FILTER nadv_addr6_cnt=0
+<6>[   72.346862,0] wl1271: wl1271_acx_nadv_filter
+<7>[   72.347045,0] in6_addr: 0:0:0:0:0:0:0:0
+<7>[   72.347167,0] in6_addr: 0:0:0:0:0:0:0:0
+<6>[   72.354064,0] wl1271: bss_conf->beacon_int 100 bss_conf->dtim_period 2
+<6>[   72.354339,0] wl1271: suspend_listen_interval 1
+<6>[   72.403167,0] wl1271: BSS_CHANGED_NADV_FILTER nadv_addr6_cnt=0
+<6>[   72.403503,0] wl1271: wl1271_acx_nadv_filter
+<7>[   72.403686,0] in6_addr: 0:0:0:0:0:0:0:0
+<7>[   72.403930,0] in6_addr: 0:0:0:0:0:0:0:0
+<6>[   72.405548,0] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+<7>[   72.405792,0] ieee80211_ifa6_changed
+<7>[   72.405883,0] in6_addr: fe80:0:0:0:8296:b1ff:fe5f:e67c
+<7>[   72.406890,0] ieee80211_ipv6_work
+<6>[   72.407745,0] wl1271: BSS_CHANGED_NADV_FILTER nadv_addr6_cnt=1
+<6>[   72.407928,0] wl1271: wl1271_cmd_build_nadv
+<6>[   72.408355,0] wl1271: wl1271_acx_nadv_filter
+<7>[   72.408569,0] in6_addr: fe80:0:0:0:8296:b1ff:fe5f:e67c
+<7>[   72.408660,0] in6_addr: 0:0:0:0:0:0:0:0
+<6>[   72.752014,0] wl1271: wl1271_op_set_key: wl1271_cmd_build_nadv
+<6>[   72.752227,0] wl1271: wl1271_cmd_build_nadv
+<6>[   72.756256,0] wl1271: Association completed.
+<3>[   75.282592,0] init: sys_prop: permission denied uid:10041  name:sys.mot.ui.launched
+<6>[   77.007415,1] mtp_open
+<3>[   77.337188,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[   79.945159,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[   80.869934,1] init: sys_prop: permission denied uid:10058  name:sys.mocana.fips
+<7>[   82.628265,0] wlan0: no IPv6 routers present
+<3>[   84.141326,1] init: sys_prop: permission denied uid:10016  name:sys.mocana.fips
+<6>[  107.975128,1] request_suspend_state: sleep (0->3) at 107971893314 (2014-03-13 07:46:07.509643556 UTC)
+<6>[  107.976409,1] DSSCOMP: dsscomp_early_suspend
+<6>[  107.993072,1] DSSCOMP: blanked screen
+<4>[  108.249481,1] lp8550_brightness_write: LED brightness write while suspended, ignoring
+<6>[  108.249664,1] active wake lock PowerManagerService
+<6>[  108.249725,1] active wake lock usb
+<6>[  108.249877,1] active wake lock rx_wake, time left 101
+<3>[  117.321563,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[  118.462860,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[  119.879425,1] init: sys_prop: permission denied uid:10016  name:sys.mot.ui.launched
+<3>[  121.099182,0] init: sys_prop: permission denied uid:10058  name:sys.mocana.fips
+<6>[  123.932983,0] dwork_timer: pm_qos_remove_request for CPU_DMA_LATENCY
+<6>[  145.130798,0] cpcap spi1.0: Power key press, value = 1
+<6>[  145.356964,0] cpcap spi1.0: Power key press, value = 0
+<6>[  146.204956,1] request_suspend_state: wakeup (3->0) at 146201721194 (2014-03-13 07:46:45.739471436 UTC)
+<6>[  146.205688,1] panel resume.
+<6>[  146.425170,1] Mapphone Display is ENABLE
+<4>[  146.425231,1] lp8550_brightness_write: LED brightness write while suspended, ignoring
+<6>[  146.426147,1] DSSCOMP: dsscomp_late_resume
+<6>[  146.427429,1] qtouch_force_reset: Forcing HW reset
+<6>[  146.636566,0] qtouch_do_cmd_proc_msg:EEPROM checksum matches
+<6>[  146.636718,0] qtouch_do_cmd_proc_msg: Reset done.
+<6>[  146.636810,0] qtouch_do_cmd_proc_msg: Self-calibration started.
+<6>[  146.930938,0] cpcap spi1.0: Power key press, value = 1
+<6>[  147.223999,0] cpcap spi1.0: Power key press, value = 0
+<6>[  148.306854,0] cpcap spi1.0: Power key press, value = 1
+<6>[  148.764739,0] cpcap spi1.0: Power key press, value = 0
+<6>[  148.791992,0] request_suspend_state: sleep (0->3) at 148788757327 (2014-03-13 07:46:48.326507569 UTC)
+<6>[  148.793701,0] DSSCOMP: dsscomp_early_suspend
+<6>[  148.815093,0] DSSCOMP: blanked screen
+<4>[  149.081451,0] lp8550_brightness_write: LED brightness write while suspended, ignoring
+<6>[  149.081604,0] active wake lock PowerManagerService
+<6>[  149.081695,0] active wake lock usb
+<6>[  149.081756,0] active wake lock rx_wake, time left 125
+<3>[  154.178771,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[  154.509521,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<6>[  158.117370,0] request_suspend_state: wakeup (3->0) at 158114166263 (2014-03-13 07:46:57.651885987 UTC)
+<6>[  158.117614,0] panel resume.
+<6>[  158.339202,0] Mapphone Display is ENABLE
+<4>[  158.339233,0] lp8550_brightness_write: LED brightness write while suspended, ignoring
+<6>[  158.339538,0] DSSCOMP: dsscomp_late_resume
+<6>[  158.339874,0] qtouch_force_reset: Forcing HW reset
+<6>[  158.550659,1] qtouch_do_cmd_proc_msg:EEPROM checksum matches
+<6>[  158.550750,1] qtouch_do_cmd_proc_msg: Reset done.
+<6>[  158.550872,1] qtouch_do_cmd_proc_msg: Self-calibration started.
+<6>[  159.265747,0] request_suspend_state: sleep (0->3) at 159262512210 (2014-03-13 07:46:58.800262452 UTC)
+<6>[  159.269531,0] DSSCOMP: dsscomp_early_suspend
+<6>[  159.292663,0] DSSCOMP: blanked screen
+<4>[  159.577209,0] lp8550_brightness_write: LED brightness write while suspended, ignoring
+<6>[  159.577423,0] active wake lock PowerManagerService
+<6>[  159.577514,0] active wake lock usb
+<6>[  159.577606,0] active wake lock rx_wake, time left 127
+<2>[  166.753601,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1021 pages, ino 1015; err -30
+<2>[  168.188995,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 8192 pages, ino 1015; err -30
+<2>[  169.131744,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 8192 pages, ino 1015; err -30
+<2>[  174.128326,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1024 pages, ino 1015; err -30
+<2>[  179.129699,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 710 pages, ino 1015; err -30
+<2>[  184.269439,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 411 pages, ino 1015; err -30
+<2>[  185.673156,0] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 8192 pages, ino 1015; err -30
+<3>[  248.582641,0] init: sys_prop: permission denied uid:10058  name:sys.mocana.fips
+<2>[  253.628906,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 970 pages, ino 1015; err -30
+<2>[  258.647277,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1017 pages, ino 1015; err -30
+<2>[  264.677001,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1016 pages, ino 1015; err -30
+<6>[  265.259887,1] wl1271: AP with dysfunctional ps-poll, trying to work around it.
+<2>[  269.676605,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1015 pages, ino 1015; err -30
+<2>[  274.675445,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 1021 pages, ino 1015; err -30
+<2>[  278.322357,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 8192 pages, ino 1015; err -30
+<2>[  278.323394,1] EXT4-fs (mmcblk1p17): ext4_da_writepages: jbd2_start: 8192 pages, ino 1015; err -30
+<6>[  280.853179,1] wl1271: No ack to nullfunc from AP.
+<6>[  305.284973,1] binder: 3658:3666 refcount change on invalid ref 21
+<6>[  305.286773,1] binder: 3658:3666 refcount change on invalid ref 42
+<5>[  316.003265,0] EXT4-fs (mmcblk1p19): error count: 74
+<5>[  316.003387,0] EXT4-fs (mmcblk1p19): initial error at 1353530281: ext4_init_inode_table:1331
+<5>[  316.003662,0] EXT4-fs (mmcblk1p19): last error at 1394696677: ext4_init_inode_table:1331
+<6>[  597.882476,1] wl1271: No ack to nullfunc from AP.
+<6>[ 1892.975830,0] mtp_release
+<6>[ 1898.346313,1] mtp_open
+<3>[ 1939.387207,0] init: untracked pid 2061 exited
+<3>[ 3825.733306,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[ 3825.811981,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<6>[ 4531.131011,1] mtp_release
+<6>[ 4536.345489,0] mtp_open
+<3>[ 5031.850585,1] init: untracked pid 4114 exited
+<3>[ 7289.243225,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[ 7289.300872,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<6>[ 8026.961822,1] mtp_release
+<6>[ 8032.164947,1] mtp_open
+<3>[ 8159.035583,0] init: untracked pid 4522 exited
+<3>[10126.435119,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[10126.499145,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[10432.989868,1] init: untracked pid 4879 exited
+<3>[13719.535583,1] init: untracked pid 5233 exited
+<3>[13726.851226,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[13726.918273,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<6>[13728.858673,1] mtp_release
+<6>[13734.103698,1] mtp_open
+<3>[13763.253692,0] (gpsdrv):Sanity check Failed exiting gpsdrv_tsklet_write
+<3>[18020.716552,1] init: untracked pid 5683 exited
+<6>[18218.270416,1] mtp_release
+<6>[18223.399230,0] mtp_open
+<3>[18277.408813,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[18277.467041,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[20034.610870,1] init: untracked pid 6145 exited
+<3>[22523.657714,0] init: untracked pid 6470 exited
+<6>[23030.155487,0] mtp_release
+<6>[23035.310974,1] mtp_open
+<3>[23628.018005,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[23628.074707,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[26117.308380,1] init: untracked pid 6854 exited
+<6>[26631.039276,0] mtp_release
+<6>[26636.314971,0] mtp_open
+<3>[27228.403717,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[27228.453002,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[29608.491821,0] init: untracked pid 7273 exited
+<6>[29715.427612,1] mtp_release
+<6>[29720.567901,1] mtp_open
+<3>[31728.942291,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[31728.999023,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[32037.711547,0] init: untracked pid 7708 exited
+<6>[33220.511932,0] mtp_release
+<6>[33225.777801,0] mtp_open
+<3>[35329.384429,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[35329.480621,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[35344.449615,1] init: untracked pid 8076 exited
+<3>[38025.792755,1] init: untracked pid 8442 exited
+<6>[38633.830963,0] mtp_release
+<6>[38638.965911,0] mtp_open
+<3>[39829.903594,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[39829.959869,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[41626.245941,0] init: untracked pid 8850 exited
+<6>[41634.638671,1] mtp_release
+<6>[41639.770172,1] mtp_open
+<3>[42530.237396,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[42530.299621,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[45035.435272,0] init: untracked pid 9261 exited
+<6>[45235.609863,0] mtp_release
+<6>[45240.724761,0] mtp_open
+<3>[46130.589447,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[46130.643402,0] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[47641.558837,0] init: untracked pid 9716 exited
+<6>[49721.897796,1] mtp_release
+<6>[49727.027252,1] mtp_open
+<3>[49781.030700,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[49781.079162,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[50435.595275,1] init: untracked pid 10057 exited
+<6>[54017.736755,1] mtp_release
+<6>[54022.859130,0] mtp_open
+<3>[54843.463073,1] init: untracked pid 10493 exited
+<3>[55131.636901,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[55131.694061,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<6>[56038.521148,0] mtp_release
+<6>[56043.662780,0] mtp_open
+<3>[58545.995117,1] init: untracked pid 10875 exited
+<6>[59430.203002,0] mtp_release
+<6>[59435.335235,1] mtp_open
+<3>[60532.199859,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[60532.249938,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[61434.205810,1] init: untracked pid 11346 exited
+<6>[62241.833740,1] mtp_release
+<6>[62246.961029,0] mtp_open
+<3>[63282.524658,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[63282.572967,1] init: sys_prop: permission denied uid:10004  name:sys.mocana.fips
+<3>[63288.141845,1] init: untracked pid 11666 exited

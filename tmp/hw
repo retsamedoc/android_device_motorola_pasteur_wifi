@@ -1,0 +1,11 @@
+alsa.omap4.so
+audio.a2dp.default.so
+audio.primary.default.so
+audio.primary.omap4.so
+audio_policy.default.so
+audio_policy.omap4.so
+camera.omap4.so
+gps.pasteur.so
+gralloc.default.so
+lights.pasteur.so
+sensors.pasteur.so
