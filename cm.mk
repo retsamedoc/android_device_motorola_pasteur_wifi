@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/motorola/pasteur_wifi/device_pasteur_wifi.mk)
+$(call inherit-product, device/motorola/pasteur_wifi/device.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)

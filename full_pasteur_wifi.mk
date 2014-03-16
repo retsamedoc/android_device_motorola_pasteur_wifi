@@ -14,9 +14,6 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=pasteur_wifi
 
-# Get some sounds
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage11.mk)
-
 # Get the TTS language packs
 #$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 $(call inherit-product-if-exists, external/svox/pico/lang/PicoLangEnUsInSystem.mk)
