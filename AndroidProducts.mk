@@ -1,2 +1,1 @@
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_pasteur_wifi.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_pasteur_wifi.mk

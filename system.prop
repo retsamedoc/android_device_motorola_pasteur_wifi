@@ -1,3 +1,19 @@
 #
 # system.prop for pasteur_wifi
 #
+
+# BEGIN Motorola, hwqc67, 22-Jun-2011, IKLOCSEN-317, FID 36426
+# Gps Smart Battery Savings
+# (depends on sensor hub)
+# 0 disable
+# 1 enable
+#persist.mot.gps.smart_battery=1
+# END IKLOCSEN-317
+
+# Motorola, IKHALFMWK-3, w001091
+# Feature 32711, deep sleep mode support
+#ro.mot.deep.sleep.supported=true
+
+# This is a 16.16 fixed point number
+#ro.opengles.version=131072
+#ro.opengles.surface.rgb565=true

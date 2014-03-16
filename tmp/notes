@@ -24,6 +24,13 @@ Avago A2FI140 048345
 Unknown Motorola IC? (MOT 14621 011-R 1F746-2)
 Unknown IC (77701-2 72827.1 1137 MX)
 
+ICS Device Info
+System Version: 13.11.26.MZ615.Retail.en.US
+Model Number: XOOM 2
+Android Version: 4.0.4
+Kernel Version 3.0.8-g09a8c55 hudsoncmcm@il93lnxdroid53 #1 SMP PREEMPT Tue Jul 3 13:50:54 CDT 2012
+Build Number: 7.7.1-85_MZ615-26
+
 ./build/tools/device/mkvendor.sh motorola pasteur_wifi device/motorola/pasteur/temp/boot.img
 lunch cm_pasteur_wifi-eng
 . build/tools/device/makerecoveries.sh cm_pasteur_wifi-eng

@@ -1,0 +1,1 @@
+console=/dev/null rw mem=1024M@0x80000000 vram=8004K,0x81800000 omapfb.vram=0:8000K@0x81800000,1:4K@0x81FD0000 init=/init ip=off mmcparts=mmcblk1:p1(mbmloader),p2(mbm),p3(mbmbackup),p4(cdt.bin),p5(pds),p6(utags),p7(logo.bin),p8(sp),p9(devtree),p10(devtree_backup),p11(boot),p12(recovery),p13(cdrom),p14(misc),p15(cid),p16(kpanic),p17(system),p18(cache),p19(preinstall),p20(userdata)
