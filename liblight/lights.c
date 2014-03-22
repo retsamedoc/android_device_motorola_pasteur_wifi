@@ -47,10 +47,9 @@ static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 static struct light_state_t g_battery;
 static struct light_state_t g_notification;
 static int g_charge_led_active;
-static int g_last_button_brightness;
 
-char const*const LCD_FILE = "/sys/class/backlight/430_540_960_amoled_bl/brightness";
-char const*const BUTTON_ON_FILE = "/sys/class/leds/button-backlight/brightness";
+//char const*const LCD_FILE = "/sys/class/backlight/430_540_960_amoled_bl/brightness";
+char const*const LCD_FILE = "/sys/class/leds/lcd-backlight/brightness";
 
 /* RGB file descriptors */
 char const*const RED_LED_FILE = "/sys/class/leds/red/brightness";
@@ -66,7 +65,6 @@ void init_globals(void)
     memset(&g_notification, 0, sizeof(g_notification));
 
     g_charge_led_active = 0;
-    g_last_button_brightness = -1;
 }
 
 static int
@@ -125,23 +123,8 @@ static int
 set_light_buttons(struct light_device_t* dev,
         struct light_state_t const* state)
 {
-    int err = 0;
-    int brightness = rgb_to_brightness(state);
-
-    pthread_mutex_lock(&g_lock);
-
-    if (g_last_button_brightness < 0 ||
-        (g_last_button_brightness == 0 && brightness > 0) ||
-        (g_last_button_brightness > 0 && brightness == 0))
-    {
-        err = write_int(BUTTON_ON_FILE, brightness ? 1 : 0);
-    }
-
-    g_last_button_brightness = brightness;
-
-    pthread_mutex_unlock(&g_lock);
-
-    return err;
+    /* we don't have any buttons to light */
+    return 0;
 
 }
 
@@ -283,7 +266,7 @@ struct hw_module_t HAL_MODULE_INFO_SYM = {
     .version_major = 1,
     .version_minor = 0,
     .id = LIGHTS_HARDWARE_MODULE_ID,
-    .name = "Spyder lights Module",
-    .author = "STS-Dev-Team, AOSP, Google",
+    .name = "Pasteur Lights Module",
+    .author = "retsamedoc, STS-Dev-Team, AOSP, Google",
     .methods = &lights_module_methods,
 };
