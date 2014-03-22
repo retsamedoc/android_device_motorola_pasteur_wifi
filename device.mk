@@ -7,7 +7,7 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
 # Hardware HALs
 PRODUCT_PACKAGES += \
 	lights.pasteur \
-	sensors.pasteur
+	sensors.pasteur \
 	gps.pasteur
 
 #PRODUCT_CHARACTERISTICS := tablet

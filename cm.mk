@@ -7,6 +7,7 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cm_pasteur_wifi
 PRODUCT_BRAND := motorola
+PRODUCT_DEVICE_PREFIX := moto
 PRODUCT_DEVICE := pasteur_wifi
 PRODUCT_MODEL := Xoom 2
 PRODUCT_MANUFACTURER := Motorola
