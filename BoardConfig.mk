@@ -37,6 +37,4 @@ BOARD_KERNEL_CMDLINE := omap_wdt.timer_margin=60 oops=panic trace_buf_size=26214
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-#TARGET_PREBUILT_KERNEL := device/motorola/pasteur_wifi/kernel
-#TARGET_KERNEL_SOURCE := kernel/motorola/omap4-common
-#TARGET_KEREL_CONFIG := cyanogenmod_pasteur_defconfig
+TARGET_PREBUILT_KERNEL := device/motorola/pasteur_wifi/kernel
